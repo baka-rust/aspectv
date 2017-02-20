@@ -12,9 +12,9 @@ public class AspectVRunner {
 		try (FileInputStream fis = new FileInputStream(file)) {
 			ANTLRInputStream input = new ANTLRInputStream(fis);
 			
-			vhdlLexer lexer = new vhdlLexer(input);
+			aspectvLexer lexer = new aspectvLexer(input);
 			CommonTokenStream tokens = new CommonTokenStream(lexer);
-			vhdlParser parser = new vhdlParser(tokens);
+			aspectvParser parser = new aspectvParser(tokens);
 			
 			ParseTree tree = parser.design_file(); // design_file is the first non-terminal
 			

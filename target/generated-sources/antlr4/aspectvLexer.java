@@ -1,4 +1,4 @@
-// Generated from vhdl.g4 by ANTLR 4.6
+// Generated from aspectv.g4 by ANTLR 4.6
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -9,7 +9,7 @@ import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.misc.*;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class vhdlLexer extends Lexer {
+public class aspectvLexer extends Lexer {
 	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -150,13 +150,13 @@ public class vhdlLexer extends Lexer {
 	}
 
 
-	public vhdlLexer(CharStream input) {
+	public aspectvLexer(CharStream input) {
 		super(input);
 		_interp = new LexerATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	@Override
-	public String getGrammarFileName() { return "vhdl.g4"; }
+	public String getGrammarFileName() { return "aspectv.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }

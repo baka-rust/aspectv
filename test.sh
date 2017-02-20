@@ -1,5 +1,5 @@
 #!/bin/bash
-java -jar /usr/local/lib/antlr-4.6-complete.jar vhdl.g4 -o build-test
-javac build-test/vhdl*.java
+java -jar /usr/local/lib/antlr-4.6-complete.jar aspectv.g4 -o build-test
+javac build-test/aspectv*.java
 cd build-test
-cat ../test.vhd | java org.antlr.v4.gui.TestRig vhdl design_file -gui
+cat ../test.vhd | java org.antlr.v4.gui.TestRig aspectv design_file -gui

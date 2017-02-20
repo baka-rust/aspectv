@@ -15,7 +15,7 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-grammar vhdl;
+grammar aspectv;
 
 ABS: A B S;
 ACCESS : A C C E S S;

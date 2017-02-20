@@ -1,4 +1,4 @@
-// Generated from vhdl.g4 by ANTLR 4.6
+// Generated from aspectv.g4 by ANTLR 4.6
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class vhdlParser extends Parser {
+public class aspectvParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.6", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
@@ -286,7 +286,7 @@ public class vhdlParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "vhdl.g4"; }
+	public String getGrammarFileName() { return "aspectv.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -297,25 +297,22 @@ public class vhdlParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public vhdlParser(TokenStream input) {
+	public aspectvParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 	public static class Abstract_literalContext extends ParserRuleContext {
-		public TerminalNode INTEGER() { return getToken(vhdlParser.INTEGER, 0); }
-		public TerminalNode REAL_LITERAL() { return getToken(vhdlParser.REAL_LITERAL, 0); }
-		public TerminalNode BASE_LITERAL() { return getToken(vhdlParser.BASE_LITERAL, 0); }
+		public TerminalNode INTEGER() { return getToken(aspectvParser.INTEGER, 0); }
+		public TerminalNode REAL_LITERAL() { return getToken(aspectvParser.REAL_LITERAL, 0); }
+		public TerminalNode BASE_LITERAL() { return getToken(aspectvParser.BASE_LITERAL, 0); }
 		public Abstract_literalContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_abstract_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAbstract_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAbstract_literal(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAbstract_literal(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -350,7 +347,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Access_type_definitionContext extends ParserRuleContext {
-		public TerminalNode ACCESS() { return getToken(vhdlParser.ACCESS, 0); }
+		public TerminalNode ACCESS() { return getToken(aspectvParser.ACCESS, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
@@ -359,12 +356,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_access_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAccess_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAccess_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAccess_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -395,11 +389,11 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode ACROSS() { return getToken(vhdlParser.ACROSS, 0); }
+		public TerminalNode ACROSS() { return getToken(aspectvParser.ACROSS, 0); }
 		public Tolerance_aspectContext tolerance_aspect() {
 			return getRuleContext(Tolerance_aspectContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -408,12 +402,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_across_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAcross_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAcross_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAcross_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -467,18 +458,15 @@ public class vhdlParser extends Parser {
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode OPEN() { return getToken(vhdlParser.OPEN, 0); }
+		public TerminalNode OPEN() { return getToken(aspectvParser.OPEN, 0); }
 		public Actual_designatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_actual_designator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterActual_designator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitActual_designator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitActual_designator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -541,12 +529,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_actual_parameter_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterActual_parameter_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitActual_parameter_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitActual_parameter_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -575,22 +560,19 @@ public class vhdlParser extends Parser {
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Actual_designatorContext actual_designator() {
 			return getRuleContext(Actual_designatorContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Actual_partContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_actual_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterActual_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitActual_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitActual_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -635,20 +617,17 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Adding_operatorContext extends ParserRuleContext {
-		public TerminalNode PLUS() { return getToken(vhdlParser.PLUS, 0); }
-		public TerminalNode MINUS() { return getToken(vhdlParser.MINUS, 0); }
-		public TerminalNode AMPERSAND() { return getToken(vhdlParser.AMPERSAND, 0); }
+		public TerminalNode PLUS() { return getToken(aspectvParser.PLUS, 0); }
+		public TerminalNode MINUS() { return getToken(aspectvParser.MINUS, 0); }
+		public TerminalNode AMPERSAND() { return getToken(aspectvParser.AMPERSAND, 0); }
 		public Adding_operatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_adding_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAdding_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAdding_operator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAdding_operator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -683,29 +662,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class AggregateContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Element_associationContext> element_association() {
 			return getRuleContexts(Element_associationContext.class);
 		}
 		public Element_associationContext element_association(int i) {
 			return getRuleContext(Element_associationContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public AggregateContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_aggregate; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAggregate(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAggregate(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAggregate(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -752,16 +728,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Alias_declarationContext extends ParserRuleContext {
-		public TerminalNode ALIAS() { return getToken(vhdlParser.ALIAS, 0); }
+		public TerminalNode ALIAS() { return getToken(aspectvParser.ALIAS, 0); }
 		public Alias_designatorContext alias_designator() {
 			return getRuleContext(Alias_designatorContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Alias_indicationContext alias_indication() {
 			return getRuleContext(Alias_indicationContext.class,0);
 		}
@@ -773,12 +749,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_alias_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAlias_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAlias_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAlias_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -838,19 +811,16 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CHARACTER_LITERAL() { return getToken(vhdlParser.CHARACTER_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(vhdlParser.STRING_LITERAL, 0); }
+		public TerminalNode CHARACTER_LITERAL() { return getToken(aspectvParser.CHARACTER_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(aspectvParser.STRING_LITERAL, 0); }
 		public Alias_designatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_alias_designator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAlias_designator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAlias_designator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAlias_designator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -910,12 +880,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_alias_indication; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAlias_indication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAlias_indication(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAlias_indication(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -954,7 +921,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class AllocatorContext extends ParserRuleContext {
-		public TerminalNode NEW() { return getToken(vhdlParser.NEW, 0); }
+		public TerminalNode NEW() { return getToken(aspectvParser.NEW, 0); }
 		public Qualified_expressionContext qualified_expression() {
 			return getRuleContext(Qualified_expressionContext.class,0);
 		}
@@ -966,12 +933,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_allocator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAllocator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAllocator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAllocator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1013,9 +977,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Architecture_bodyContext extends ParserRuleContext {
-		public List<TerminalNode> ARCHITECTURE() { return getTokens(vhdlParser.ARCHITECTURE); }
+		public List<TerminalNode> ARCHITECTURE() { return getTokens(aspectvParser.ARCHITECTURE); }
 		public TerminalNode ARCHITECTURE(int i) {
-			return getToken(vhdlParser.ARCHITECTURE, i);
+			return getToken(aspectvParser.ARCHITECTURE, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -1023,28 +987,25 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Architecture_declarative_partContext architecture_declarative_part() {
 			return getRuleContext(Architecture_declarative_partContext.class,0);
 		}
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Architecture_statement_partContext architecture_statement_part() {
 			return getRuleContext(Architecture_statement_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Architecture_bodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_architecture_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArchitecture_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArchitecture_body(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArchitecture_body(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1120,12 +1081,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_architecture_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArchitecture_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArchitecture_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArchitecture_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1182,7 +1140,7 @@ public class vhdlParser extends Parser {
 		public Concurrent_signal_assignment_statementContext concurrent_signal_assignment_statement() {
 			return getRuleContext(Concurrent_signal_assignment_statementContext.class,0);
 		}
-		public TerminalNode POSTPONED() { return getToken(vhdlParser.POSTPONED, 0); }
+		public TerminalNode POSTPONED() { return getToken(aspectvParser.POSTPONED, 0); }
 		public Component_instantiation_statementContext component_instantiation_statement() {
 			return getRuleContext(Component_instantiation_statementContext.class,0);
 		}
@@ -1200,12 +1158,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_architecture_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArchitecture_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArchitecture_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArchitecture_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1344,12 +1299,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_architecture_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArchitecture_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArchitecture_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArchitecture_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1399,12 +1351,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_array_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArray_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArray_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArray_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1454,12 +1403,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_array_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterArray_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitArray_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitArray_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1498,29 +1444,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class AssertionContext extends ParserRuleContext {
-		public TerminalNode ASSERT() { return getToken(vhdlParser.ASSERT, 0); }
+		public TerminalNode ASSERT() { return getToken(aspectvParser.ASSERT, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
-		public TerminalNode REPORT() { return getToken(vhdlParser.REPORT, 0); }
+		public TerminalNode REPORT() { return getToken(aspectvParser.REPORT, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode SEVERITY() { return getToken(vhdlParser.SEVERITY, 0); }
+		public TerminalNode SEVERITY() { return getToken(aspectvParser.SEVERITY, 0); }
 		public AssertionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assertion; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAssertion(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAssertion(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAssertion(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1576,7 +1519,7 @@ public class vhdlParser extends Parser {
 		public AssertionContext assertion() {
 			return getRuleContext(AssertionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -1585,12 +1528,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_assertion_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAssertion_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAssertion_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAssertion_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1635,18 +1575,15 @@ public class vhdlParser extends Parser {
 		public Formal_partContext formal_part() {
 			return getRuleContext(Formal_partContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(vhdlParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(aspectvParser.ARROW, 0); }
 		public Association_elementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_association_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAssociation_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAssociation_element(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAssociation_element(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1690,21 +1627,18 @@ public class vhdlParser extends Parser {
 		public Association_elementContext association_element(int i) {
 			return getRuleContext(Association_elementContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Association_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_association_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAssociation_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAssociation_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAssociation_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1747,25 +1681,22 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Attribute_declarationContext extends ParserRuleContext {
-		public TerminalNode ATTRIBUTE() { return getToken(vhdlParser.ATTRIBUTE, 0); }
+		public TerminalNode ATTRIBUTE() { return getToken(aspectvParser.ATTRIBUTE, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Attribute_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAttribute_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAttribute_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAttribute_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1800,23 +1731,20 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode RANGE() { return getToken(vhdlParser.RANGE, 0); }
-		public TerminalNode REVERSE_RANGE() { return getToken(vhdlParser.REVERSE_RANGE, 0); }
-		public TerminalNode ACROSS() { return getToken(vhdlParser.ACROSS, 0); }
-		public TerminalNode THROUGH() { return getToken(vhdlParser.THROUGH, 0); }
-		public TerminalNode REFERENCE() { return getToken(vhdlParser.REFERENCE, 0); }
-		public TerminalNode TOLERANCE() { return getToken(vhdlParser.TOLERANCE, 0); }
+		public TerminalNode RANGE() { return getToken(aspectvParser.RANGE, 0); }
+		public TerminalNode REVERSE_RANGE() { return getToken(aspectvParser.REVERSE_RANGE, 0); }
+		public TerminalNode ACROSS() { return getToken(aspectvParser.ACROSS, 0); }
+		public TerminalNode THROUGH() { return getToken(aspectvParser.THROUGH, 0); }
+		public TerminalNode REFERENCE() { return getToken(aspectvParser.REFERENCE, 0); }
+		public TerminalNode TOLERANCE() { return getToken(aspectvParser.TOLERANCE, 0); }
 		public Attribute_designatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute_designator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAttribute_designator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAttribute_designator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAttribute_designator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1893,30 +1821,27 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Attribute_specificationContext extends ParserRuleContext {
-		public TerminalNode ATTRIBUTE() { return getToken(vhdlParser.ATTRIBUTE, 0); }
+		public TerminalNode ATTRIBUTE() { return getToken(aspectvParser.ATTRIBUTE, 0); }
 		public Attribute_designatorContext attribute_designator() {
 			return getRuleContext(Attribute_designatorContext.class,0);
 		}
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Entity_specificationContext entity_specification() {
 			return getRuleContext(Entity_specificationContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Attribute_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_attribute_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterAttribute_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitAttribute_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitAttribute_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1957,18 +1882,15 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Base_unit_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_base_unit_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBase_unit_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBase_unit_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBase_unit_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -1996,7 +1918,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Binding_indicationContext extends ParserRuleContext {
-		public TerminalNode USE() { return getToken(vhdlParser.USE, 0); }
+		public TerminalNode USE() { return getToken(aspectvParser.USE, 0); }
 		public Entity_aspectContext entity_aspect() {
 			return getRuleContext(Entity_aspectContext.class,0);
 		}
@@ -2011,12 +1933,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_binding_indication; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBinding_indication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBinding_indication(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBinding_indication(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2073,15 +1992,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Block_configurationContext extends ParserRuleContext {
-		public List<TerminalNode> FOR() { return getTokens(vhdlParser.FOR); }
+		public List<TerminalNode> FOR() { return getTokens(aspectvParser.FOR); }
 		public TerminalNode FOR(int i) {
-			return getToken(vhdlParser.FOR, i);
+			return getToken(aspectvParser.FOR, i);
 		}
 		public Block_specificationContext block_specification() {
 			return getRuleContext(Block_specificationContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public List<Use_clauseContext> use_clause() {
 			return getRuleContexts(Use_clauseContext.class);
 		}
@@ -2099,12 +2018,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_configuration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_configuration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_configuration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_configuration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2238,12 +2154,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2433,12 +2346,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2486,9 +2396,9 @@ public class vhdlParser extends Parser {
 		public Generic_map_aspectContext generic_map_aspect() {
 			return getRuleContext(Generic_map_aspectContext.class,0);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Port_map_aspectContext port_map_aspect() {
 			return getRuleContext(Port_map_aspectContext.class,0);
@@ -2498,12 +2408,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_header; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_header(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_header(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_header(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2575,11 +2482,11 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Index_specificationContext index_specification() {
 			return getRuleContext(Index_specificationContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
@@ -2588,12 +2495,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2650,9 +2554,9 @@ public class vhdlParser extends Parser {
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public List<TerminalNode> BLOCK() { return getTokens(vhdlParser.BLOCK); }
+		public List<TerminalNode> BLOCK() { return getTokens(aspectvParser.BLOCK); }
 		public TerminalNode BLOCK(int i) {
-			return getToken(vhdlParser.BLOCK, i);
+			return getToken(aspectvParser.BLOCK, i);
 		}
 		public Block_headerContext block_header() {
 			return getRuleContext(Block_headerContext.class,0);
@@ -2660,18 +2564,18 @@ public class vhdlParser extends Parser {
 		public Block_declarative_partContext block_declarative_part() {
 			return getRuleContext(Block_declarative_partContext.class,0);
 		}
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Block_statement_partContext block_statement_part() {
 			return getRuleContext(Block_statement_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -2680,12 +2584,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2773,12 +2674,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_block_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBlock_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBlock_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBlock_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2817,11 +2715,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Branch_quantity_declarationContext extends ParserRuleContext {
-		public TerminalNode QUANTITY() { return getToken(vhdlParser.QUANTITY, 0); }
+		public TerminalNode QUANTITY() { return getToken(aspectvParser.QUANTITY, 0); }
 		public Terminal_aspectContext terminal_aspect() {
 			return getRuleContext(Terminal_aspectContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Across_aspectContext across_aspect() {
 			return getRuleContext(Across_aspectContext.class,0);
 		}
@@ -2833,12 +2731,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_branch_quantity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBranch_quantity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBranch_quantity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBranch_quantity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2891,7 +2786,7 @@ public class vhdlParser extends Parser {
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(vhdlParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(aspectvParser.ARROW, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -2903,12 +2798,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_break_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBreak_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBreak_element(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBreak_element(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -2955,21 +2847,18 @@ public class vhdlParser extends Parser {
 		public Break_elementContext break_element(int i) {
 			return getRuleContext(Break_elementContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Break_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_break_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBreak_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBreak_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBreak_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3012,22 +2901,19 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Break_selector_clauseContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(vhdlParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(aspectvParser.FOR, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode USE() { return getToken(vhdlParser.USE, 0); }
+		public TerminalNode USE() { return getToken(aspectvParser.USE, 0); }
 		public Break_selector_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_break_selector_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBreak_selector_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBreak_selector_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBreak_selector_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3057,15 +2943,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Break_statementContext extends ParserRuleContext {
-		public TerminalNode BREAK() { return getToken(vhdlParser.BREAK, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode BREAK() { return getToken(aspectvParser.BREAK, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
 		public Break_listContext break_list() {
 			return getRuleContext(Break_listContext.class,0);
 		}
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -3074,12 +2960,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_break_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterBreak_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitBreak_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitBreak_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3140,16 +3023,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Case_statementContext extends ParserRuleContext {
-		public List<TerminalNode> CASE() { return getTokens(vhdlParser.CASE); }
+		public List<TerminalNode> CASE() { return getTokens(aspectvParser.CASE); }
 		public TerminalNode CASE(int i) {
-			return getToken(vhdlParser.CASE, i);
+			return getToken(aspectvParser.CASE, i);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -3167,12 +3050,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_case_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterCase_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitCase_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitCase_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3243,11 +3123,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Case_statement_alternativeContext extends ParserRuleContext {
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ChoicesContext choices() {
 			return getRuleContext(ChoicesContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(vhdlParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(aspectvParser.ARROW, 0); }
 		public Sequence_of_statementsContext sequence_of_statements() {
 			return getRuleContext(Sequence_of_statementsContext.class,0);
 		}
@@ -3256,12 +3136,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_case_statement_alternative; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterCase_statement_alternative(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitCase_statement_alternative(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitCase_statement_alternative(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3302,18 +3179,15 @@ public class vhdlParser extends Parser {
 		public Simple_expressionContext simple_expression() {
 			return getRuleContext(Simple_expressionContext.class,0);
 		}
-		public TerminalNode OTHERS() { return getToken(vhdlParser.OTHERS, 0); }
+		public TerminalNode OTHERS() { return getToken(aspectvParser.OTHERS, 0); }
 		public ChoiceContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_choice; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterChoice(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitChoice(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitChoice(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3372,21 +3246,18 @@ public class vhdlParser extends Parser {
 		public ChoiceContext choice(int i) {
 			return getRuleContext(ChoiceContext.class,i);
 		}
-		public List<TerminalNode> BAR() { return getTokens(vhdlParser.BAR); }
+		public List<TerminalNode> BAR() { return getTokens(aspectvParser.BAR); }
 		public TerminalNode BAR(int i) {
-			return getToken(vhdlParser.BAR, i);
+			return getToken(aspectvParser.BAR, i);
 		}
 		public ChoicesContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_choices; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterChoices(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitChoices(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitChoices(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3429,17 +3300,17 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Component_configurationContext extends ParserRuleContext {
-		public List<TerminalNode> FOR() { return getTokens(vhdlParser.FOR); }
+		public List<TerminalNode> FOR() { return getTokens(aspectvParser.FOR); }
 		public TerminalNode FOR(int i) {
-			return getToken(vhdlParser.FOR, i);
+			return getToken(aspectvParser.FOR, i);
 		}
 		public Component_specificationContext component_specification() {
 			return getRuleContext(Component_specificationContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Binding_indicationContext binding_indication() {
 			return getRuleContext(Binding_indicationContext.class,0);
@@ -3452,12 +3323,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_component_configuration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComponent_configuration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComponent_configuration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComponent_configuration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3514,9 +3382,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Component_declarationContext extends ParserRuleContext {
-		public List<TerminalNode> COMPONENT() { return getTokens(vhdlParser.COMPONENT); }
+		public List<TerminalNode> COMPONENT() { return getTokens(aspectvParser.COMPONENT); }
 		public TerminalNode COMPONENT(int i) {
-			return getToken(vhdlParser.COMPONENT, i);
+			return getToken(aspectvParser.COMPONENT, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -3524,9 +3392,9 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Generic_clauseContext generic_clause() {
 			return getRuleContext(Generic_clauseContext.class,0);
 		}
@@ -3538,12 +3406,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_component_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComponent_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComponent_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComponent_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3624,7 +3489,7 @@ public class vhdlParser extends Parser {
 		public Instantiated_unitContext instantiated_unit() {
 			return getRuleContext(Instantiated_unitContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Generic_map_aspectContext generic_map_aspect() {
 			return getRuleContext(Generic_map_aspectContext.class,0);
 		}
@@ -3636,12 +3501,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_component_instantiation_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComponent_instantiation_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComponent_instantiation_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComponent_instantiation_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3695,7 +3557,7 @@ public class vhdlParser extends Parser {
 		public Instantiation_listContext instantiation_list() {
 			return getRuleContext(Instantiation_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
@@ -3704,12 +3566,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_component_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComponent_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComponent_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComponent_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3750,12 +3609,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_composite_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComposite_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComposite_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComposite_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3807,12 +3663,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_composite_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterComposite_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitComposite_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitComposite_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3856,22 +3709,19 @@ public class vhdlParser extends Parser {
 		public AssertionContext assertion() {
 			return getRuleContext(AssertionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public TerminalNode POSTPONED() { return getToken(vhdlParser.POSTPONED, 0); }
+		public TerminalNode POSTPONED() { return getToken(aspectvParser.POSTPONED, 0); }
 		public Concurrent_assertion_statementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_concurrent_assertion_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConcurrent_assertion_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConcurrent_assertion_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConcurrent_assertion_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -3920,8 +3770,8 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Concurrent_break_statementContext extends ParserRuleContext {
-		public TerminalNode BREAK() { return getToken(vhdlParser.BREAK, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode BREAK() { return getToken(aspectvParser.BREAK, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -3931,7 +3781,7 @@ public class vhdlParser extends Parser {
 		public Sensitivity_clauseContext sensitivity_clause() {
 			return getRuleContext(Sensitivity_clauseContext.class,0);
 		}
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -3940,12 +3790,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_concurrent_break_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConcurrent_break_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConcurrent_break_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConcurrent_break_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4019,22 +3866,19 @@ public class vhdlParser extends Parser {
 		public Procedure_callContext procedure_call() {
 			return getRuleContext(Procedure_callContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public TerminalNode POSTPONED() { return getToken(vhdlParser.POSTPONED, 0); }
+		public TerminalNode POSTPONED() { return getToken(aspectvParser.POSTPONED, 0); }
 		public Concurrent_procedure_call_statementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_concurrent_procedure_call_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConcurrent_procedure_call_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConcurrent_procedure_call_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConcurrent_procedure_call_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4092,18 +3936,15 @@ public class vhdlParser extends Parser {
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public TerminalNode POSTPONED() { return getToken(vhdlParser.POSTPONED, 0); }
+		public TerminalNode POSTPONED() { return getToken(aspectvParser.POSTPONED, 0); }
 		public Concurrent_signal_assignment_statementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_concurrent_signal_assignment_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConcurrent_signal_assignment_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConcurrent_signal_assignment_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConcurrent_signal_assignment_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4176,12 +4017,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_condition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterCondition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitCondition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitCondition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4207,7 +4045,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Condition_clauseContext extends ParserRuleContext {
-		public TerminalNode UNTIL() { return getToken(vhdlParser.UNTIL, 0); }
+		public TerminalNode UNTIL() { return getToken(aspectvParser.UNTIL, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -4216,12 +4054,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_condition_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterCondition_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitCondition_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitCondition_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4252,25 +4087,22 @@ public class vhdlParser extends Parser {
 		public TargetContext target() {
 			return getRuleContext(TargetContext.class,0);
 		}
-		public TerminalNode LE() { return getToken(vhdlParser.LE, 0); }
+		public TerminalNode LE() { return getToken(aspectvParser.LE, 0); }
 		public OptsContext opts() {
 			return getRuleContext(OptsContext.class,0);
 		}
 		public Conditional_waveformsContext conditional_waveforms() {
 			return getRuleContext(Conditional_waveformsContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Conditional_signal_assignmentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_conditional_signal_assignment; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConditional_signal_assignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConditional_signal_assignment(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConditional_signal_assignment(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4307,11 +4139,11 @@ public class vhdlParser extends Parser {
 		public WaveformContext waveform() {
 			return getRuleContext(WaveformContext.class,0);
 		}
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
-		public TerminalNode ELSE() { return getToken(vhdlParser.ELSE, 0); }
+		public TerminalNode ELSE() { return getToken(aspectvParser.ELSE, 0); }
 		public Conditional_waveformsContext conditional_waveforms() {
 			return getRuleContext(Conditional_waveformsContext.class,0);
 		}
@@ -4320,12 +4152,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_conditional_waveforms; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConditional_waveforms(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConditional_waveforms(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConditional_waveforms(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4376,9 +4205,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Configuration_declarationContext extends ParserRuleContext {
-		public List<TerminalNode> CONFIGURATION() { return getTokens(vhdlParser.CONFIGURATION); }
+		public List<TerminalNode> CONFIGURATION() { return getTokens(aspectvParser.CONFIGURATION); }
 		public TerminalNode CONFIGURATION(int i) {
-			return getToken(vhdlParser.CONFIGURATION, i);
+			return getToken(aspectvParser.CONFIGURATION, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -4386,30 +4215,27 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Configuration_declarative_partContext configuration_declarative_part() {
 			return getRuleContext(Configuration_declarative_partContext.class,0);
 		}
 		public Block_configurationContext block_configuration() {
 			return getRuleContext(Block_configurationContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Configuration_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_configuration_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConfiguration_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConfiguration_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConfiguration_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4486,12 +4312,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_configuration_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConfiguration_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConfiguration_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConfiguration_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4550,12 +4373,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_configuration_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConfiguration_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConfiguration_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConfiguration_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4605,12 +4425,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_configuration_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConfiguration_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConfiguration_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConfiguration_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4649,25 +4466,22 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Configuration_specificationContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(vhdlParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(aspectvParser.FOR, 0); }
 		public Component_specificationContext component_specification() {
 			return getRuleContext(Component_specificationContext.class,0);
 		}
 		public Binding_indicationContext binding_indication() {
 			return getRuleContext(Binding_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Configuration_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_configuration_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConfiguration_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConfiguration_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConfiguration_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4699,16 +4513,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Constant_declarationContext extends ParserRuleContext {
-		public TerminalNode CONSTANT() { return getToken(vhdlParser.CONSTANT, 0); }
+		public TerminalNode CONSTANT() { return getToken(aspectvParser.CONSTANT, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -4717,12 +4531,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_constant_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConstant_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConstant_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConstant_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4769,11 +4580,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Constrained_array_definitionContext extends ParserRuleContext {
-		public TerminalNode ARRAY() { return getToken(vhdlParser.ARRAY, 0); }
+		public TerminalNode ARRAY() { return getToken(aspectvParser.ARRAY, 0); }
 		public Index_constraintContext index_constraint() {
 			return getRuleContext(Index_constraintContext.class,0);
 		}
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
@@ -4782,12 +4593,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_constrained_array_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConstrained_array_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConstrained_array_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConstrained_array_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4819,11 +4627,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Constrained_nature_definitionContext extends ParserRuleContext {
-		public TerminalNode ARRAY() { return getToken(vhdlParser.ARRAY, 0); }
+		public TerminalNode ARRAY() { return getToken(aspectvParser.ARRAY, 0); }
 		public Index_constraintContext index_constraint() {
 			return getRuleContext(Index_constraintContext.class,0);
 		}
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Subnature_indicationContext subnature_indication() {
 			return getRuleContext(Subnature_indicationContext.class,0);
 		}
@@ -4832,12 +4640,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_constrained_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConstrained_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConstrained_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConstrained_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4880,12 +4685,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_constraint; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterConstraint(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitConstraint(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitConstraint(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4937,12 +4739,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_context_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterContext_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitContext_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitContext_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -4992,12 +4791,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_context_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterContext_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitContext_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitContext_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5038,9 +4834,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Delay_mechanismContext extends ParserRuleContext {
-		public TerminalNode TRANSPORT() { return getToken(vhdlParser.TRANSPORT, 0); }
-		public TerminalNode INERTIAL() { return getToken(vhdlParser.INERTIAL, 0); }
-		public TerminalNode REJECT() { return getToken(vhdlParser.REJECT, 0); }
+		public TerminalNode TRANSPORT() { return getToken(aspectvParser.TRANSPORT, 0); }
+		public TerminalNode INERTIAL() { return getToken(aspectvParser.INERTIAL, 0); }
+		public TerminalNode REJECT() { return getToken(aspectvParser.REJECT, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -5049,12 +4845,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_delay_mechanism; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDelay_mechanism(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDelay_mechanism(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDelay_mechanism(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5109,7 +4902,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Design_fileContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(vhdlParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(aspectvParser.EOF, 0); }
 		public List<Design_unitContext> design_unit() {
 			return getRuleContexts(Design_unitContext.class);
 		}
@@ -5121,12 +4914,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_design_file; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDesign_file(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDesign_file(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDesign_file(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5178,12 +4968,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_design_unit; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDesign_unit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDesign_unit(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDesign_unit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5214,18 +5001,15 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode STRING_LITERAL() { return getToken(vhdlParser.STRING_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(aspectvParser.STRING_LITERAL, 0); }
 		public DesignatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_designator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDesignator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDesignator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDesignator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5267,19 +5051,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class DirectionContext extends ParserRuleContext {
-		public TerminalNode TO() { return getToken(vhdlParser.TO, 0); }
-		public TerminalNode DOWNTO() { return getToken(vhdlParser.DOWNTO, 0); }
+		public TerminalNode TO() { return getToken(aspectvParser.TO, 0); }
+		public TerminalNode DOWNTO() { return getToken(aspectvParser.DOWNTO, 0); }
 		public DirectionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_direction; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDirection(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDirection(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDirection(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5314,26 +5095,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Disconnection_specificationContext extends ParserRuleContext {
-		public TerminalNode DISCONNECT() { return getToken(vhdlParser.DISCONNECT, 0); }
+		public TerminalNode DISCONNECT() { return getToken(aspectvParser.DISCONNECT, 0); }
 		public Guarded_signal_specificationContext guarded_signal_specification() {
 			return getRuleContext(Guarded_signal_specificationContext.class,0);
 		}
-		public TerminalNode AFTER() { return getToken(vhdlParser.AFTER, 0); }
+		public TerminalNode AFTER() { return getToken(aspectvParser.AFTER, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Disconnection_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_disconnection_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDisconnection_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDisconnection_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDisconnection_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5378,12 +5156,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_discrete_range; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterDiscrete_range(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitDiscrete_range(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitDiscrete_range(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5428,18 +5203,15 @@ public class vhdlParser extends Parser {
 		public ChoicesContext choices() {
 			return getRuleContext(ChoicesContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(vhdlParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(aspectvParser.ARROW, 0); }
 		public Element_associationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_element_association; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterElement_association(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitElement_association(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitElement_association(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5480,22 +5252,19 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Element_subtype_definitionContext element_subtype_definition() {
 			return getRuleContext(Element_subtype_definitionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Element_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_element_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterElement_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitElement_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitElement_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5535,12 +5304,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_element_subnature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterElement_subnature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitElement_subnature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitElement_subnature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5574,12 +5340,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_element_subtype_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterElement_subtype_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitElement_subtype_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitElement_subtype_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5605,28 +5368,25 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Entity_aspectContext extends ParserRuleContext {
-		public TerminalNode ENTITY() { return getToken(vhdlParser.ENTITY, 0); }
+		public TerminalNode ENTITY() { return getToken(aspectvParser.ENTITY, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode CONFIGURATION() { return getToken(vhdlParser.CONFIGURATION, 0); }
-		public TerminalNode OPEN() { return getToken(vhdlParser.OPEN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode CONFIGURATION() { return getToken(aspectvParser.CONFIGURATION, 0); }
+		public TerminalNode OPEN() { return getToken(aspectvParser.OPEN, 0); }
 		public Entity_aspectContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5693,38 +5453,35 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Entity_classContext extends ParserRuleContext {
-		public TerminalNode ENTITY() { return getToken(vhdlParser.ENTITY, 0); }
-		public TerminalNode ARCHITECTURE() { return getToken(vhdlParser.ARCHITECTURE, 0); }
-		public TerminalNode CONFIGURATION() { return getToken(vhdlParser.CONFIGURATION, 0); }
-		public TerminalNode PROCEDURE() { return getToken(vhdlParser.PROCEDURE, 0); }
-		public TerminalNode FUNCTION() { return getToken(vhdlParser.FUNCTION, 0); }
-		public TerminalNode PACKAGE() { return getToken(vhdlParser.PACKAGE, 0); }
-		public TerminalNode TYPE() { return getToken(vhdlParser.TYPE, 0); }
-		public TerminalNode SUBTYPE() { return getToken(vhdlParser.SUBTYPE, 0); }
-		public TerminalNode CONSTANT() { return getToken(vhdlParser.CONSTANT, 0); }
-		public TerminalNode SIGNAL() { return getToken(vhdlParser.SIGNAL, 0); }
-		public TerminalNode VARIABLE() { return getToken(vhdlParser.VARIABLE, 0); }
-		public TerminalNode COMPONENT() { return getToken(vhdlParser.COMPONENT, 0); }
-		public TerminalNode LABEL() { return getToken(vhdlParser.LABEL, 0); }
-		public TerminalNode LITERAL() { return getToken(vhdlParser.LITERAL, 0); }
-		public TerminalNode UNITS() { return getToken(vhdlParser.UNITS, 0); }
-		public TerminalNode GROUP() { return getToken(vhdlParser.GROUP, 0); }
-		public TerminalNode FILE() { return getToken(vhdlParser.FILE, 0); }
-		public TerminalNode NATURE() { return getToken(vhdlParser.NATURE, 0); }
-		public TerminalNode SUBNATURE() { return getToken(vhdlParser.SUBNATURE, 0); }
-		public TerminalNode QUANTITY() { return getToken(vhdlParser.QUANTITY, 0); }
-		public TerminalNode TERMINAL() { return getToken(vhdlParser.TERMINAL, 0); }
+		public TerminalNode ENTITY() { return getToken(aspectvParser.ENTITY, 0); }
+		public TerminalNode ARCHITECTURE() { return getToken(aspectvParser.ARCHITECTURE, 0); }
+		public TerminalNode CONFIGURATION() { return getToken(aspectvParser.CONFIGURATION, 0); }
+		public TerminalNode PROCEDURE() { return getToken(aspectvParser.PROCEDURE, 0); }
+		public TerminalNode FUNCTION() { return getToken(aspectvParser.FUNCTION, 0); }
+		public TerminalNode PACKAGE() { return getToken(aspectvParser.PACKAGE, 0); }
+		public TerminalNode TYPE() { return getToken(aspectvParser.TYPE, 0); }
+		public TerminalNode SUBTYPE() { return getToken(aspectvParser.SUBTYPE, 0); }
+		public TerminalNode CONSTANT() { return getToken(aspectvParser.CONSTANT, 0); }
+		public TerminalNode SIGNAL() { return getToken(aspectvParser.SIGNAL, 0); }
+		public TerminalNode VARIABLE() { return getToken(aspectvParser.VARIABLE, 0); }
+		public TerminalNode COMPONENT() { return getToken(aspectvParser.COMPONENT, 0); }
+		public TerminalNode LABEL() { return getToken(aspectvParser.LABEL, 0); }
+		public TerminalNode LITERAL() { return getToken(aspectvParser.LITERAL, 0); }
+		public TerminalNode UNITS() { return getToken(aspectvParser.UNITS, 0); }
+		public TerminalNode GROUP() { return getToken(aspectvParser.GROUP, 0); }
+		public TerminalNode FILE() { return getToken(aspectvParser.FILE, 0); }
+		public TerminalNode NATURE() { return getToken(aspectvParser.NATURE, 0); }
+		public TerminalNode SUBNATURE() { return getToken(aspectvParser.SUBNATURE, 0); }
+		public TerminalNode QUANTITY() { return getToken(aspectvParser.QUANTITY, 0); }
+		public TerminalNode TERMINAL() { return getToken(aspectvParser.TERMINAL, 0); }
 		public Entity_classContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_class; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_class(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_class(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_class(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5762,18 +5519,15 @@ public class vhdlParser extends Parser {
 		public Entity_classContext entity_class() {
 			return getRuleContext(Entity_classContext.class,0);
 		}
-		public TerminalNode BOX() { return getToken(vhdlParser.BOX, 0); }
+		public TerminalNode BOX() { return getToken(aspectvParser.BOX, 0); }
 		public Entity_class_entryContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_class_entry; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_class_entry(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_class_entry(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_class_entry(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5816,21 +5570,18 @@ public class vhdlParser extends Parser {
 		public Entity_class_entryContext entity_class_entry(int i) {
 			return getRuleContext(Entity_class_entryContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Entity_class_entry_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_class_entry_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_class_entry_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_class_entry_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_class_entry_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -5873,9 +5624,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Entity_declarationContext extends ParserRuleContext {
-		public List<TerminalNode> ENTITY() { return getTokens(vhdlParser.ENTITY); }
+		public List<TerminalNode> ENTITY() { return getTokens(aspectvParser.ENTITY); }
 		public TerminalNode ENTITY(int i) {
-			return getToken(vhdlParser.ENTITY, i);
+			return getToken(aspectvParser.ENTITY, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -5883,16 +5634,16 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Entity_headerContext entity_header() {
 			return getRuleContext(Entity_headerContext.class,0);
 		}
 		public Entity_declarative_partContext entity_declarative_part() {
 			return getRuleContext(Entity_declarative_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Entity_statement_partContext entity_statement_part() {
 			return getRuleContext(Entity_statement_partContext.class,0);
 		}
@@ -5901,12 +5652,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6042,12 +5790,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6223,12 +5968,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6278,12 +6020,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_designator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_designator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_designator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_designator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6331,12 +6070,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_header; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_header(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_header(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_header(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6387,23 +6123,20 @@ public class vhdlParser extends Parser {
 		public Entity_designatorContext entity_designator(int i) {
 			return getRuleContext(Entity_designatorContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
-		public TerminalNode OTHERS() { return getToken(vhdlParser.OTHERS, 0); }
-		public TerminalNode ALL() { return getToken(vhdlParser.ALL, 0); }
+		public TerminalNode OTHERS() { return getToken(aspectvParser.OTHERS, 0); }
+		public TerminalNode ALL() { return getToken(aspectvParser.ALL, 0); }
 		public Entity_name_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_name_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_name_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_name_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_name_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6474,7 +6207,7 @@ public class vhdlParser extends Parser {
 		public Entity_name_listContext entity_name_list() {
 			return getRuleContext(Entity_name_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Entity_classContext entity_class() {
 			return getRuleContext(Entity_classContext.class,0);
 		}
@@ -6483,12 +6216,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6532,12 +6262,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6594,12 +6321,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_entity_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6641,19 +6365,16 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CHARACTER_LITERAL() { return getToken(vhdlParser.CHARACTER_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(vhdlParser.STRING_LITERAL, 0); }
+		public TerminalNode CHARACTER_LITERAL() { return getToken(aspectvParser.CHARACTER_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(aspectvParser.STRING_LITERAL, 0); }
 		public Entity_tagContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_entity_tag; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEntity_tag(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEntity_tag(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEntity_tag(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6705,18 +6426,15 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CHARACTER_LITERAL() { return getToken(vhdlParser.CHARACTER_LITERAL, 0); }
+		public TerminalNode CHARACTER_LITERAL() { return getToken(aspectvParser.CHARACTER_LITERAL, 0); }
 		public Enumeration_literalContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumeration_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEnumeration_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEnumeration_literal(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEnumeration_literal(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6758,29 +6476,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Enumeration_type_definitionContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Enumeration_literalContext> enumeration_literal() {
 			return getRuleContexts(Enumeration_literalContext.class);
 		}
 		public Enumeration_literalContext enumeration_literal(int i) {
 			return getRuleContext(Enumeration_literalContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Enumeration_type_definitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_enumeration_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterEnumeration_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitEnumeration_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitEnumeration_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6827,15 +6542,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Exit_statementContext extends ParserRuleContext {
-		public TerminalNode EXIT() { return getToken(vhdlParser.EXIT, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode EXIT() { return getToken(aspectvParser.EXIT, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -6844,12 +6559,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_exit_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterExit_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitExit_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitExit_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6927,12 +6639,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterExpression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitExpression(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitExpression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -6983,20 +6692,17 @@ public class vhdlParser extends Parser {
 		public PrimaryContext primary(int i) {
 			return getRuleContext(PrimaryContext.class,i);
 		}
-		public TerminalNode DOUBLESTAR() { return getToken(vhdlParser.DOUBLESTAR, 0); }
-		public TerminalNode ABS() { return getToken(vhdlParser.ABS, 0); }
-		public TerminalNode NOT() { return getToken(vhdlParser.NOT, 0); }
+		public TerminalNode DOUBLESTAR() { return getToken(aspectvParser.DOUBLESTAR, 0); }
+		public TerminalNode ABS() { return getToken(aspectvParser.ABS, 0); }
+		public TerminalNode NOT() { return getToken(aspectvParser.NOT, 0); }
 		public FactorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_factor; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFactor(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFactor(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFactor(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7070,15 +6776,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class File_declarationContext extends ParserRuleContext {
-		public TerminalNode FILE() { return getToken(vhdlParser.FILE, 0); }
+		public TerminalNode FILE() { return getToken(aspectvParser.FILE, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public File_open_informationContext file_open_information() {
 			return getRuleContext(File_open_informationContext.class,0);
 		}
@@ -7087,12 +6793,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_file_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFile_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFile_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFile_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7145,12 +6848,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_file_logical_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFile_logical_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFile_logical_name(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFile_logical_name(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7176,11 +6876,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class File_open_informationContext extends ParserRuleContext {
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public File_logical_nameContext file_logical_name() {
 			return getRuleContext(File_logical_nameContext.class,0);
 		}
-		public TerminalNode OPEN() { return getToken(vhdlParser.OPEN, 0); }
+		public TerminalNode OPEN() { return getToken(aspectvParser.OPEN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -7189,12 +6889,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_file_open_information; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFile_open_information(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFile_open_information(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFile_open_information(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7235,8 +6932,8 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class File_type_definitionContext extends ParserRuleContext {
-		public TerminalNode FILE() { return getToken(vhdlParser.FILE, 0); }
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode FILE() { return getToken(aspectvParser.FILE, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
@@ -7245,12 +6942,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_file_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFile_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFile_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFile_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7288,12 +6982,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_formal_parameter_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFormal_parameter_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFormal_parameter_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFormal_parameter_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7322,22 +7013,19 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Explicit_rangeContext explicit_range() {
 			return getRuleContext(Explicit_rangeContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Formal_partContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_formal_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFormal_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFormal_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFormal_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7382,16 +7070,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Free_quantity_declarationContext extends ParserRuleContext {
-		public TerminalNode QUANTITY() { return getToken(vhdlParser.QUANTITY, 0); }
+		public TerminalNode QUANTITY() { return getToken(aspectvParser.QUANTITY, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -7400,12 +7088,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_free_quantity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFree_quantity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFree_quantity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFree_quantity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7458,13 +7143,13 @@ public class vhdlParser extends Parser {
 		public Generation_schemeContext generation_scheme() {
 			return getRuleContext(Generation_schemeContext.class,0);
 		}
-		public List<TerminalNode> GENERATE() { return getTokens(vhdlParser.GENERATE); }
+		public List<TerminalNode> GENERATE() { return getTokens(aspectvParser.GENERATE); }
 		public TerminalNode GENERATE(int i) {
-			return getToken(vhdlParser.GENERATE, i);
+			return getToken(aspectvParser.GENERATE, i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public List<Architecture_statementContext> architecture_statement() {
 			return getRuleContexts(Architecture_statementContext.class);
 		}
@@ -7485,12 +7170,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_generate_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGenerate_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGenerate_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGenerate_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7575,11 +7257,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Generation_schemeContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(vhdlParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(aspectvParser.FOR, 0); }
 		public Parameter_specificationContext parameter_specification() {
 			return getRuleContext(Parameter_specificationContext.class,0);
 		}
-		public TerminalNode IF() { return getToken(vhdlParser.IF, 0); }
+		public TerminalNode IF() { return getToken(aspectvParser.IF, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -7588,12 +7270,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_generation_scheme; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGeneration_scheme(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGeneration_scheme(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGeneration_scheme(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7638,24 +7317,21 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Generic_clauseContext extends ParserRuleContext {
-		public TerminalNode GENERIC() { return getToken(vhdlParser.GENERIC, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode GENERIC() { return getToken(aspectvParser.GENERIC, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Generic_listContext generic_list() {
 			return getRuleContext(Generic_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Generic_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGeneric_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGeneric_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGeneric_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7695,21 +7371,18 @@ public class vhdlParser extends Parser {
 		public Interface_constant_declarationContext interface_constant_declaration(int i) {
 			return getRuleContext(Interface_constant_declarationContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Generic_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGeneric_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGeneric_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGeneric_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7752,24 +7425,21 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Generic_map_aspectContext extends ParserRuleContext {
-		public TerminalNode GENERIC() { return getToken(vhdlParser.GENERIC, 0); }
-		public TerminalNode MAP() { return getToken(vhdlParser.MAP, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode GENERIC() { return getToken(aspectvParser.GENERIC, 0); }
+		public TerminalNode MAP() { return getToken(aspectvParser.MAP, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Association_listContext association_list() {
 			return getRuleContext(Association_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Generic_map_aspectContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_generic_map_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGeneric_map_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGeneric_map_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGeneric_map_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7806,18 +7476,15 @@ public class vhdlParser extends Parser {
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode CHARACTER_LITERAL() { return getToken(vhdlParser.CHARACTER_LITERAL, 0); }
+		public TerminalNode CHARACTER_LITERAL() { return getToken(aspectvParser.CHARACTER_LITERAL, 0); }
 		public Group_constituentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_group_constituent; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGroup_constituent(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGroup_constituent(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGroup_constituent(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7865,21 +7532,18 @@ public class vhdlParser extends Parser {
 		public Group_constituentContext group_constituent(int i) {
 			return getRuleContext(Group_constituentContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Group_constituent_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_group_constituent_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGroup_constituent_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGroup_constituent_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGroup_constituent_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7922,30 +7586,27 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Group_declarationContext extends ParserRuleContext {
-		public TerminalNode GROUP() { return getToken(vhdlParser.GROUP, 0); }
+		public TerminalNode GROUP() { return getToken(aspectvParser.GROUP, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Group_constituent_listContext group_constituent_list() {
 			return getRuleContext(Group_constituent_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Group_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_group_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGroup_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGroup_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGroup_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -7983,28 +7644,25 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Group_template_declarationContext extends ParserRuleContext {
-		public TerminalNode GROUP() { return getToken(vhdlParser.GROUP, 0); }
+		public TerminalNode GROUP() { return getToken(aspectvParser.GROUP, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Entity_class_entry_listContext entity_class_entry_list() {
 			return getRuleContext(Entity_class_entry_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Group_template_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_group_template_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGroup_template_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGroup_template_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGroup_template_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8045,7 +7703,7 @@ public class vhdlParser extends Parser {
 		public Signal_listContext signal_list() {
 			return getRuleContext(Signal_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
@@ -8054,12 +7712,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_guarded_signal_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterGuarded_signal_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitGuarded_signal_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitGuarded_signal_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8089,19 +7744,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class IdentifierContext extends ParserRuleContext {
-		public TerminalNode BASIC_IDENTIFIER() { return getToken(vhdlParser.BASIC_IDENTIFIER, 0); }
-		public TerminalNode EXTENDED_IDENTIFIER() { return getToken(vhdlParser.EXTENDED_IDENTIFIER, 0); }
+		public TerminalNode BASIC_IDENTIFIER() { return getToken(aspectvParser.BASIC_IDENTIFIER, 0); }
+		public TerminalNode EXTENDED_IDENTIFIER() { return getToken(aspectvParser.EXTENDED_IDENTIFIER, 0); }
 		public IdentifierContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifier; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIdentifier(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIdentifier(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIdentifier(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8142,21 +7794,18 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Identifier_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_identifier_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIdentifier_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIdentifier_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIdentifier_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8199,9 +7848,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class If_statementContext extends ParserRuleContext {
-		public List<TerminalNode> IF() { return getTokens(vhdlParser.IF); }
+		public List<TerminalNode> IF() { return getTokens(aspectvParser.IF); }
 		public TerminalNode IF(int i) {
-			return getToken(vhdlParser.IF, i);
+			return getToken(aspectvParser.IF, i);
 		}
 		public List<ConditionContext> condition() {
 			return getRuleContexts(ConditionContext.class);
@@ -8209,9 +7858,9 @@ public class vhdlParser extends Parser {
 		public ConditionContext condition(int i) {
 			return getRuleContext(ConditionContext.class,i);
 		}
-		public List<TerminalNode> THEN() { return getTokens(vhdlParser.THEN); }
+		public List<TerminalNode> THEN() { return getTokens(aspectvParser.THEN); }
 		public TerminalNode THEN(int i) {
-			return getToken(vhdlParser.THEN, i);
+			return getToken(aspectvParser.THEN, i);
 		}
 		public List<Sequence_of_statementsContext> sequence_of_statements() {
 			return getRuleContexts(Sequence_of_statementsContext.class);
@@ -8219,16 +7868,16 @@ public class vhdlParser extends Parser {
 		public Sequence_of_statementsContext sequence_of_statements(int i) {
 			return getRuleContext(Sequence_of_statementsContext.class,i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public List<TerminalNode> ELSIF() { return getTokens(vhdlParser.ELSIF); }
+		public List<TerminalNode> ELSIF() { return getTokens(aspectvParser.ELSIF); }
 		public TerminalNode ELSIF(int i) {
-			return getToken(vhdlParser.ELSIF, i);
+			return getToken(aspectvParser.ELSIF, i);
 		}
-		public TerminalNode ELSE() { return getToken(vhdlParser.ELSE, 0); }
+		public TerminalNode ELSE() { return getToken(aspectvParser.ELSE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -8237,12 +7886,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_if_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIf_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIf_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIf_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8333,29 +7979,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Index_constraintContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Discrete_rangeContext> discrete_range() {
 			return getRuleContexts(Discrete_rangeContext.class);
 		}
 		public Discrete_rangeContext discrete_range(int i) {
 			return getRuleContext(Discrete_rangeContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Index_constraintContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_index_constraint; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIndex_constraint(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIndex_constraint(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIndex_constraint(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8413,12 +8056,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_index_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIndex_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIndex_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIndex_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8460,19 +8100,16 @@ public class vhdlParser extends Parser {
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode RANGE() { return getToken(vhdlParser.RANGE, 0); }
-		public TerminalNode BOX() { return getToken(vhdlParser.BOX, 0); }
+		public TerminalNode RANGE() { return getToken(aspectvParser.RANGE, 0); }
+		public TerminalNode BOX() { return getToken(aspectvParser.BOX, 0); }
 		public Index_subtype_definitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_index_subtype_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIndex_subtype_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIndex_subtype_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIndex_subtype_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8505,25 +8142,22 @@ public class vhdlParser extends Parser {
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
-		public TerminalNode COMPONENT() { return getToken(vhdlParser.COMPONENT, 0); }
-		public TerminalNode ENTITY() { return getToken(vhdlParser.ENTITY, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode COMPONENT() { return getToken(aspectvParser.COMPONENT, 0); }
+		public TerminalNode ENTITY() { return getToken(aspectvParser.ENTITY, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode CONFIGURATION() { return getToken(vhdlParser.CONFIGURATION, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode CONFIGURATION() { return getToken(aspectvParser.CONFIGURATION, 0); }
 		public Instantiated_unitContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_instantiated_unit; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInstantiated_unit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInstantiated_unit(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInstantiated_unit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8608,23 +8242,20 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
-		public TerminalNode OTHERS() { return getToken(vhdlParser.OTHERS, 0); }
-		public TerminalNode ALL() { return getToken(vhdlParser.ALL, 0); }
+		public TerminalNode OTHERS() { return getToken(aspectvParser.OTHERS, 0); }
+		public TerminalNode ALL() { return getToken(aspectvParser.ALL, 0); }
 		public Instantiation_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_instantiation_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInstantiation_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInstantiation_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInstantiation_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8693,13 +8324,13 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode CONSTANT() { return getToken(vhdlParser.CONSTANT, 0); }
-		public TerminalNode IN() { return getToken(vhdlParser.IN, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode CONSTANT() { return getToken(aspectvParser.CONSTANT, 0); }
+		public TerminalNode IN() { return getToken(aspectvParser.IN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -8708,12 +8339,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_constant_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_constant_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_constant_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_constant_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8799,12 +8427,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8879,12 +8504,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_element(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_element(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8910,11 +8532,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Interface_file_declarationContext extends ParserRuleContext {
-		public TerminalNode FILE() { return getToken(vhdlParser.FILE, 0); }
+		public TerminalNode FILE() { return getToken(aspectvParser.FILE, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
@@ -8923,12 +8545,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_file_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_file_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_file_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_file_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -8966,21 +8585,18 @@ public class vhdlParser extends Parser {
 		public Interface_signal_declarationContext interface_signal_declaration(int i) {
 			return getRuleContext(Interface_signal_declarationContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Interface_signal_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interface_signal_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_signal_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_signal_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_signal_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9029,21 +8645,18 @@ public class vhdlParser extends Parser {
 		public Interface_port_declarationContext interface_port_declaration(int i) {
 			return getRuleContext(Interface_port_declarationContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Interface_port_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interface_port_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_port_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_port_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_port_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9092,21 +8705,18 @@ public class vhdlParser extends Parser {
 		public Interface_elementContext interface_element(int i) {
 			return getRuleContext(Interface_elementContext.class,i);
 		}
-		public List<TerminalNode> SEMI() { return getTokens(vhdlParser.SEMI); }
+		public List<TerminalNode> SEMI() { return getTokens(aspectvParser.SEMI); }
 		public TerminalNode SEMI(int i) {
-			return getToken(vhdlParser.SEMI, i);
+			return getToken(aspectvParser.SEMI, i);
 		}
 		public Interface_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interface_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9149,31 +8759,28 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Interface_quantity_declarationContext extends ParserRuleContext {
-		public TerminalNode QUANTITY() { return getToken(vhdlParser.QUANTITY, 0); }
+		public TerminalNode QUANTITY() { return getToken(aspectvParser.QUANTITY, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode IN() { return getToken(vhdlParser.IN, 0); }
-		public TerminalNode OUT() { return getToken(vhdlParser.OUT, 0); }
+		public TerminalNode IN() { return getToken(aspectvParser.IN, 0); }
+		public TerminalNode OUT() { return getToken(aspectvParser.OUT, 0); }
 		public Interface_quantity_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_interface_quantity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_quantity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_quantity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_quantity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9239,15 +8846,15 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Signal_modeContext signal_mode() {
 			return getRuleContext(Signal_modeContext.class,0);
 		}
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode BUS() { return getToken(vhdlParser.BUS, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode BUS() { return getToken(aspectvParser.BUS, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -9256,12 +8863,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_port_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_port_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_port_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_port_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9316,16 +8920,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Interface_signal_declarationContext extends ParserRuleContext {
-		public TerminalNode SIGNAL() { return getToken(vhdlParser.SIGNAL, 0); }
+		public TerminalNode SIGNAL() { return getToken(aspectvParser.SIGNAL, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode BUS() { return getToken(vhdlParser.BUS, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode BUS() { return getToken(aspectvParser.BUS, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -9334,12 +8938,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_signal_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_signal_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_signal_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_signal_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9394,11 +8995,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Interface_terminal_declarationContext extends ParserRuleContext {
-		public TerminalNode TERMINAL() { return getToken(vhdlParser.TERMINAL, 0); }
+		public TerminalNode TERMINAL() { return getToken(aspectvParser.TERMINAL, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subnature_indicationContext subnature_indication() {
 			return getRuleContext(Subnature_indicationContext.class,0);
 		}
@@ -9407,12 +9008,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_terminal_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_terminal_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_terminal_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_terminal_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9447,15 +9045,15 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode VARIABLE() { return getToken(vhdlParser.VARIABLE, 0); }
+		public TerminalNode VARIABLE() { return getToken(aspectvParser.VARIABLE, 0); }
 		public Signal_modeContext signal_mode() {
 			return getRuleContext(Signal_modeContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -9464,12 +9062,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_interface_variable_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterInterface_variable_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitInterface_variable_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitInterface_variable_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9532,11 +9127,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Iteration_schemeContext extends ParserRuleContext {
-		public TerminalNode WHILE() { return getToken(vhdlParser.WHILE, 0); }
+		public TerminalNode WHILE() { return getToken(aspectvParser.WHILE, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
-		public TerminalNode FOR() { return getToken(vhdlParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(aspectvParser.FOR, 0); }
 		public Parameter_specificationContext parameter_specification() {
 			return getRuleContext(Parameter_specificationContext.class,0);
 		}
@@ -9545,12 +9140,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_iteration_scheme; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterIteration_scheme(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitIteration_scheme(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitIteration_scheme(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9598,18 +9190,15 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Label_colonContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_label_colon; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLabel_colon(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLabel_colon(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLabel_colon(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9637,22 +9226,19 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Library_clauseContext extends ParserRuleContext {
-		public TerminalNode LIBRARY() { return getToken(vhdlParser.LIBRARY, 0); }
+		public TerminalNode LIBRARY() { return getToken(aspectvParser.LIBRARY, 0); }
 		public Logical_name_listContext logical_name_list() {
 			return getRuleContext(Logical_name_listContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Library_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_library_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLibrary_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLibrary_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLibrary_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9693,12 +9279,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_library_unit; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLibrary_unit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLibrary_unit(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLibrary_unit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9737,9 +9320,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class LiteralContext extends ParserRuleContext {
-		public TerminalNode NULL() { return getToken(vhdlParser.NULL, 0); }
-		public TerminalNode BIT_STRING_LITERAL() { return getToken(vhdlParser.BIT_STRING_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(vhdlParser.STRING_LITERAL, 0); }
+		public TerminalNode NULL() { return getToken(aspectvParser.NULL, 0); }
+		public TerminalNode BIT_STRING_LITERAL() { return getToken(aspectvParser.BIT_STRING_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(aspectvParser.STRING_LITERAL, 0); }
 		public Enumeration_literalContext enumeration_literal() {
 			return getRuleContext(Enumeration_literalContext.class,0);
 		}
@@ -9751,12 +9334,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLiteral(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLiteral(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLiteral(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9830,12 +9410,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_logical_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLogical_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLogical_name(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLogical_name(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9867,21 +9444,18 @@ public class vhdlParser extends Parser {
 		public Logical_nameContext logical_name(int i) {
 			return getRuleContext(Logical_nameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Logical_name_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_logical_name_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLogical_name_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLogical_name_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLogical_name_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9924,23 +9498,20 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Logical_operatorContext extends ParserRuleContext {
-		public TerminalNode AND() { return getToken(vhdlParser.AND, 0); }
-		public TerminalNode OR() { return getToken(vhdlParser.OR, 0); }
-		public TerminalNode NAND() { return getToken(vhdlParser.NAND, 0); }
-		public TerminalNode NOR() { return getToken(vhdlParser.NOR, 0); }
-		public TerminalNode XOR() { return getToken(vhdlParser.XOR, 0); }
-		public TerminalNode XNOR() { return getToken(vhdlParser.XNOR, 0); }
+		public TerminalNode AND() { return getToken(aspectvParser.AND, 0); }
+		public TerminalNode OR() { return getToken(aspectvParser.OR, 0); }
+		public TerminalNode NAND() { return getToken(aspectvParser.NAND, 0); }
+		public TerminalNode NOR() { return getToken(aspectvParser.NOR, 0); }
+		public TerminalNode XOR() { return getToken(aspectvParser.XOR, 0); }
+		public TerminalNode XNOR() { return getToken(aspectvParser.XNOR, 0); }
 		public Logical_operatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_logical_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLogical_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLogical_operator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLogical_operator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -9975,15 +9546,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Loop_statementContext extends ParserRuleContext {
-		public List<TerminalNode> LOOP() { return getTokens(vhdlParser.LOOP); }
+		public List<TerminalNode> LOOP() { return getTokens(aspectvParser.LOOP); }
 		public TerminalNode LOOP(int i) {
-			return getToken(vhdlParser.LOOP, i);
+			return getToken(aspectvParser.LOOP, i);
 		}
 		public Sequence_of_statementsContext sequence_of_statements() {
 			return getRuleContext(Sequence_of_statementsContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -9998,12 +9569,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_loop_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterLoop_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitLoop_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitLoop_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10068,22 +9636,19 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Signal_modeContext extends ParserRuleContext {
-		public TerminalNode IN() { return getToken(vhdlParser.IN, 0); }
-		public TerminalNode OUT() { return getToken(vhdlParser.OUT, 0); }
-		public TerminalNode INOUT() { return getToken(vhdlParser.INOUT, 0); }
-		public TerminalNode BUFFER() { return getToken(vhdlParser.BUFFER, 0); }
-		public TerminalNode LINKAGE() { return getToken(vhdlParser.LINKAGE, 0); }
+		public TerminalNode IN() { return getToken(aspectvParser.IN, 0); }
+		public TerminalNode OUT() { return getToken(aspectvParser.OUT, 0); }
+		public TerminalNode INOUT() { return getToken(aspectvParser.INOUT, 0); }
+		public TerminalNode BUFFER() { return getToken(aspectvParser.BUFFER, 0); }
+		public TerminalNode LINKAGE() { return getToken(aspectvParser.LINKAGE, 0); }
 		public Signal_modeContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_signal_mode; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignal_mode(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignal_mode(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignal_mode(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10118,21 +9683,18 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Multiplying_operatorContext extends ParserRuleContext {
-		public TerminalNode MUL() { return getToken(vhdlParser.MUL, 0); }
-		public TerminalNode DIV() { return getToken(vhdlParser.DIV, 0); }
-		public TerminalNode MOD() { return getToken(vhdlParser.MOD, 0); }
-		public TerminalNode REM() { return getToken(vhdlParser.REM, 0); }
+		public TerminalNode MUL() { return getToken(aspectvParser.MUL, 0); }
+		public TerminalNode DIV() { return getToken(aspectvParser.DIV, 0); }
+		public TerminalNode MOD() { return getToken(aspectvParser.MOD, 0); }
+		public TerminalNode REM() { return getToken(aspectvParser.REM, 0); }
 		public Multiplying_operatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_multiplying_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterMultiplying_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitMultiplying_operator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitMultiplying_operator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10176,21 +9738,18 @@ public class vhdlParser extends Parser {
 		public Name_partContext name_part(int i) {
 			return getRuleContext(Name_partContext.class,i);
 		}
-		public List<TerminalNode> DOT() { return getTokens(vhdlParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(aspectvParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(vhdlParser.DOT, i);
+			return getToken(aspectvParser.DOT, i);
 		}
 		public NameContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterName(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitName(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitName(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10265,12 +9824,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_name_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterName_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitName_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitName_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10318,7 +9874,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Name_attribute_partContext extends ParserRuleContext {
-		public TerminalNode APOSTROPHE() { return getToken(vhdlParser.APOSTROPHE, 0); }
+		public TerminalNode APOSTROPHE() { return getToken(aspectvParser.APOSTROPHE, 0); }
 		public Attribute_designatorContext attribute_designator() {
 			return getRuleContext(Attribute_designatorContext.class,0);
 		}
@@ -10328,21 +9884,18 @@ public class vhdlParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Name_attribute_partContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_name_attribute_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterName_attribute_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitName_attribute_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitName_attribute_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10399,8 +9952,8 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Name_function_call_or_indexed_partContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Actual_parameter_partContext actual_parameter_part() {
 			return getRuleContext(Actual_parameter_partContext.class,0);
 		}
@@ -10409,12 +9962,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_name_function_call_or_indexed_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterName_function_call_or_indexed_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitName_function_call_or_indexed_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitName_function_call_or_indexed_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10453,29 +10003,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Name_slice_partContext extends ParserRuleContext {
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Explicit_rangeContext> explicit_range() {
 			return getRuleContexts(Explicit_rangeContext.class);
 		}
 		public Explicit_rangeContext explicit_range(int i) {
 			return getRuleContext(Explicit_rangeContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Name_slice_partContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_name_slice_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterName_slice_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitName_slice_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitName_slice_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10525,9 +10072,9 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public List<TerminalNode> DOT() { return getTokens(vhdlParser.DOT); }
+		public List<TerminalNode> DOT() { return getTokens(aspectvParser.DOT); }
 		public TerminalNode DOT(int i) {
-			return getToken(vhdlParser.DOT, i);
+			return getToken(aspectvParser.DOT, i);
 		}
 		public List<SuffixContext> suffix() {
 			return getRuleContexts(SuffixContext.class);
@@ -10540,12 +10087,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_selected_name; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSelected_name(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSelected_name(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSelected_name(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10590,26 +10134,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Nature_declarationContext extends ParserRuleContext {
-		public TerminalNode NATURE() { return getToken(vhdlParser.NATURE, 0); }
+		public TerminalNode NATURE() { return getToken(aspectvParser.NATURE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Nature_definitionContext nature_definition() {
 			return getRuleContext(Nature_definitionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Nature_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_nature_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterNature_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitNature_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitNature_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10654,12 +10195,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterNature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitNature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitNature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10705,7 +10243,7 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Element_subnature_definitionContext element_subnature_definition() {
 			return getRuleContext(Element_subnature_definitionContext.class,0);
 		}
@@ -10714,12 +10252,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_nature_element_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterNature_element_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitNature_element_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitNature_element_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10749,15 +10284,15 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Next_statementContext extends ParserRuleContext {
-		public TerminalNode NEXT() { return getToken(vhdlParser.NEXT, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode NEXT() { return getToken(aspectvParser.NEXT, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ConditionContext condition() {
 			return getRuleContext(ConditionContext.class,0);
 		}
@@ -10766,12 +10301,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_next_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterNext_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitNext_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitNext_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10843,12 +10375,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_numeric_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterNumeric_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitNumeric_literal(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitNumeric_literal(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10910,12 +10439,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_object_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterObject_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitObject_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitObject_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -10985,7 +10511,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class OptsContext extends ParserRuleContext {
-		public TerminalNode GUARDED() { return getToken(vhdlParser.GUARDED, 0); }
+		public TerminalNode GUARDED() { return getToken(aspectvParser.GUARDED, 0); }
 		public Delay_mechanismContext delay_mechanism() {
 			return getRuleContext(Delay_mechanismContext.class,0);
 		}
@@ -10994,12 +10520,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_opts; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterOpts(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitOpts(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitOpts(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11044,13 +10567,13 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Package_bodyContext extends ParserRuleContext {
-		public List<TerminalNode> PACKAGE() { return getTokens(vhdlParser.PACKAGE); }
+		public List<TerminalNode> PACKAGE() { return getTokens(aspectvParser.PACKAGE); }
 		public TerminalNode PACKAGE(int i) {
-			return getToken(vhdlParser.PACKAGE, i);
+			return getToken(aspectvParser.PACKAGE, i);
 		}
-		public List<TerminalNode> BODY() { return getTokens(vhdlParser.BODY); }
+		public List<TerminalNode> BODY() { return getTokens(aspectvParser.BODY); }
 		public TerminalNode BODY(int i) {
-			return getToken(vhdlParser.BODY, i);
+			return getToken(aspectvParser.BODY, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -11058,23 +10581,20 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Package_body_declarative_partContext package_body_declarative_part() {
 			return getRuleContext(Package_body_declarative_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Package_bodyContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_package_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_body(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_body(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11173,12 +10693,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_package_body_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_body_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_body_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_body_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11291,12 +10808,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_package_body_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_body_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_body_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_body_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11335,9 +10849,9 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Package_declarationContext extends ParserRuleContext {
-		public List<TerminalNode> PACKAGE() { return getTokens(vhdlParser.PACKAGE); }
+		public List<TerminalNode> PACKAGE() { return getTokens(aspectvParser.PACKAGE); }
 		public TerminalNode PACKAGE(int i) {
-			return getToken(vhdlParser.PACKAGE, i);
+			return getToken(aspectvParser.PACKAGE, i);
 		}
 		public List<IdentifierContext> identifier() {
 			return getRuleContexts(IdentifierContext.class);
@@ -11345,23 +10859,20 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier(int i) {
 			return getRuleContext(IdentifierContext.class,i);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Package_declarative_partContext package_declarative_part() {
 			return getRuleContext(Package_declarative_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Package_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_package_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11477,12 +10988,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_package_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11644,12 +11152,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_package_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPackage_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPackage_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPackage_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11691,7 +11196,7 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode IN() { return getToken(vhdlParser.IN, 0); }
+		public TerminalNode IN() { return getToken(aspectvParser.IN, 0); }
 		public Discrete_rangeContext discrete_range() {
 			return getRuleContext(Discrete_rangeContext.class,0);
 		}
@@ -11700,12 +11205,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_parameter_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterParameter_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitParameter_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitParameter_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11746,12 +11248,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_physical_literal; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPhysical_literal(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPhysical_literal(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPhysical_literal(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11784,14 +11283,14 @@ public class vhdlParser extends Parser {
 		public Range_constraintContext range_constraint() {
 			return getRuleContext(Range_constraintContext.class,0);
 		}
-		public List<TerminalNode> UNITS() { return getTokens(vhdlParser.UNITS); }
+		public List<TerminalNode> UNITS() { return getTokens(aspectvParser.UNITS); }
 		public TerminalNode UNITS(int i) {
-			return getToken(vhdlParser.UNITS, i);
+			return getToken(aspectvParser.UNITS, i);
 		}
 		public Base_unit_declarationContext base_unit_declaration() {
 			return getRuleContext(Base_unit_declarationContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
 		public List<Secondary_unit_declarationContext> secondary_unit_declaration() {
 			return getRuleContexts(Secondary_unit_declarationContext.class);
 		}
@@ -11806,12 +11305,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_physical_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPhysical_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPhysical_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPhysical_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11870,24 +11366,21 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Port_clauseContext extends ParserRuleContext {
-		public TerminalNode PORT() { return getToken(vhdlParser.PORT, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode PORT() { return getToken(aspectvParser.PORT, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Port_listContext port_list() {
 			return getRuleContext(Port_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Port_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_port_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPort_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPort_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPort_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11929,12 +11422,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_port_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPort_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPort_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPort_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -11960,24 +11450,21 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Port_map_aspectContext extends ParserRuleContext {
-		public TerminalNode PORT() { return getToken(vhdlParser.PORT, 0); }
-		public TerminalNode MAP() { return getToken(vhdlParser.MAP, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode PORT() { return getToken(aspectvParser.PORT, 0); }
+		public TerminalNode MAP() { return getToken(aspectvParser.MAP, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Association_listContext association_list() {
 			return getRuleContext(Association_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Port_map_aspectContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_port_map_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPort_map_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPort_map_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPort_map_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12017,11 +11504,11 @@ public class vhdlParser extends Parser {
 		public Qualified_expressionContext qualified_expression() {
 			return getRuleContext(Qualified_expressionContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public AllocatorContext allocator() {
 			return getRuleContext(AllocatorContext.class,0);
 		}
@@ -12036,12 +11523,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_primary; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPrimary(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPrimary(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPrimary(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12126,12 +11610,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_primary_unit; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterPrimary_unit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitPrimary_unit(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitPrimary_unit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12220,12 +11701,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_procedural_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedural_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedural_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedural_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12345,12 +11823,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_procedural_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedural_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedural_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedural_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12400,12 +11875,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_procedural_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedural_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedural_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedural_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12447,22 +11919,19 @@ public class vhdlParser extends Parser {
 		public Selected_nameContext selected_name() {
 			return getRuleContext(Selected_nameContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Actual_parameter_partContext actual_parameter_part() {
 			return getRuleContext(Actual_parameter_partContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Procedure_callContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_procedure_call; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedure_call(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedure_call(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedure_call(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12506,7 +11975,7 @@ public class vhdlParser extends Parser {
 		public Procedure_callContext procedure_call() {
 			return getRuleContext(Procedure_callContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -12515,12 +11984,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_procedure_call_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedure_call_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedure_call_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedure_call_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12602,12 +12068,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_process_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcess_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcess_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcess_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12734,12 +12197,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_process_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcess_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcess_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcess_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12778,32 +12238,32 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Process_statementContext extends ParserRuleContext {
-		public List<TerminalNode> PROCESS() { return getTokens(vhdlParser.PROCESS); }
+		public List<TerminalNode> PROCESS() { return getTokens(aspectvParser.PROCESS); }
 		public TerminalNode PROCESS(int i) {
-			return getToken(vhdlParser.PROCESS, i);
+			return getToken(aspectvParser.PROCESS, i);
 		}
 		public Process_declarative_partContext process_declarative_part() {
 			return getRuleContext(Process_declarative_partContext.class,0);
 		}
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Process_statement_partContext process_statement_part() {
 			return getRuleContext(Process_statement_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public List<TerminalNode> POSTPONED() { return getTokens(vhdlParser.POSTPONED); }
+		public List<TerminalNode> POSTPONED() { return getTokens(aspectvParser.POSTPONED); }
 		public TerminalNode POSTPONED(int i) {
-			return getToken(vhdlParser.POSTPONED, i);
+			return getToken(aspectvParser.POSTPONED, i);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Sensitivity_listContext sensitivity_list() {
 			return getRuleContext(Sensitivity_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -12812,12 +12272,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_process_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcess_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcess_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcess_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12931,12 +12388,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_process_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcess_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcess_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcess_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -12978,26 +12432,23 @@ public class vhdlParser extends Parser {
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode APOSTROPHE() { return getToken(vhdlParser.APOSTROPHE, 0); }
+		public TerminalNode APOSTROPHE() { return getToken(aspectvParser.APOSTROPHE, 0); }
 		public AggregateContext aggregate() {
 			return getRuleContext(AggregateContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Qualified_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_qualified_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterQualified_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitQualified_expression(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitQualified_expression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13059,12 +12510,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_quantity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterQuantity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitQuantity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitQuantity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13116,23 +12564,20 @@ public class vhdlParser extends Parser {
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
-		public TerminalNode OTHERS() { return getToken(vhdlParser.OTHERS, 0); }
-		public TerminalNode ALL() { return getToken(vhdlParser.ALL, 0); }
+		public TerminalNode OTHERS() { return getToken(aspectvParser.OTHERS, 0); }
+		public TerminalNode ALL() { return getToken(aspectvParser.ALL, 0); }
 		public Quantity_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_quantity_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterQuantity_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitQuantity_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitQuantity_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13201,7 +12646,7 @@ public class vhdlParser extends Parser {
 		public Quantity_listContext quantity_list() {
 			return getRuleContext(Quantity_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public NameContext name() {
 			return getRuleContext(NameContext.class,0);
 		}
@@ -13210,12 +12655,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_quantity_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterQuantity_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitQuantity_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitQuantity_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13256,12 +12698,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_range; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRange(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRange(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRange(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13314,12 +12753,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_explicit_range; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterExplicit_range(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitExplicit_range(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitExplicit_range(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13349,7 +12785,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Range_constraintContext extends ParserRuleContext {
-		public TerminalNode RANGE() { return getToken(vhdlParser.RANGE, 0); }
+		public TerminalNode RANGE() { return getToken(aspectvParser.RANGE, 0); }
 		public RangeContext range() {
 			return getRuleContext(RangeContext.class,0);
 		}
@@ -13358,12 +12794,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_range_constraint; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRange_constraint(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRange_constraint(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRange_constraint(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13391,11 +12824,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Record_nature_definitionContext extends ParserRuleContext {
-		public List<TerminalNode> RECORD() { return getTokens(vhdlParser.RECORD); }
+		public List<TerminalNode> RECORD() { return getTokens(aspectvParser.RECORD); }
 		public TerminalNode RECORD(int i) {
-			return getToken(vhdlParser.RECORD, i);
+			return getToken(aspectvParser.RECORD, i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
 		public List<Nature_element_declarationContext> nature_element_declaration() {
 			return getRuleContexts(Nature_element_declarationContext.class);
 		}
@@ -13410,12 +12843,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_record_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRecord_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRecord_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRecord_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13470,11 +12900,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Record_type_definitionContext extends ParserRuleContext {
-		public List<TerminalNode> RECORD() { return getTokens(vhdlParser.RECORD); }
+		public List<TerminalNode> RECORD() { return getTokens(aspectvParser.RECORD); }
 		public TerminalNode RECORD(int i) {
-			return getToken(vhdlParser.RECORD, i);
+			return getToken(aspectvParser.RECORD, i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
 		public List<Element_declarationContext> element_declaration() {
 			return getRuleContexts(Element_declarationContext.class);
 		}
@@ -13489,12 +12919,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_record_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRecord_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRecord_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRecord_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13563,12 +12990,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_relation; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRelation(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRelation(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRelation(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13606,23 +13030,20 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Relational_operatorContext extends ParserRuleContext {
-		public TerminalNode EQ() { return getToken(vhdlParser.EQ, 0); }
-		public TerminalNode NEQ() { return getToken(vhdlParser.NEQ, 0); }
-		public TerminalNode LOWERTHAN() { return getToken(vhdlParser.LOWERTHAN, 0); }
-		public TerminalNode LE() { return getToken(vhdlParser.LE, 0); }
-		public TerminalNode GREATERTHAN() { return getToken(vhdlParser.GREATERTHAN, 0); }
-		public TerminalNode GE() { return getToken(vhdlParser.GE, 0); }
+		public TerminalNode EQ() { return getToken(aspectvParser.EQ, 0); }
+		public TerminalNode NEQ() { return getToken(aspectvParser.NEQ, 0); }
+		public TerminalNode LOWERTHAN() { return getToken(aspectvParser.LOWERTHAN, 0); }
+		public TerminalNode LE() { return getToken(aspectvParser.LE, 0); }
+		public TerminalNode GREATERTHAN() { return getToken(aspectvParser.GREATERTHAN, 0); }
+		public TerminalNode GE() { return getToken(aspectvParser.GE, 0); }
 		public Relational_operatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_relational_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterRelational_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitRelational_operator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitRelational_operator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13657,29 +13078,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Report_statementContext extends ParserRuleContext {
-		public TerminalNode REPORT() { return getToken(vhdlParser.REPORT, 0); }
+		public TerminalNode REPORT() { return getToken(aspectvParser.REPORT, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public TerminalNode SEVERITY() { return getToken(vhdlParser.SEVERITY, 0); }
+		public TerminalNode SEVERITY() { return getToken(aspectvParser.SEVERITY, 0); }
 		public Report_statementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_report_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterReport_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitReport_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitReport_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13732,8 +13150,8 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Return_statementContext extends ParserRuleContext {
-		public TerminalNode RETURN() { return getToken(vhdlParser.RETURN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode RETURN() { return getToken(aspectvParser.RETURN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -13745,12 +13163,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_return_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterReturn_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitReturn_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitReturn_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13805,20 +13220,17 @@ public class vhdlParser extends Parser {
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public TerminalNode ACROSS() { return getToken(vhdlParser.ACROSS, 0); }
-		public TerminalNode THROUGH() { return getToken(vhdlParser.THROUGH, 0); }
-		public TerminalNode REFERENCE() { return getToken(vhdlParser.REFERENCE, 0); }
+		public TerminalNode ACROSS() { return getToken(aspectvParser.ACROSS, 0); }
+		public TerminalNode THROUGH() { return getToken(aspectvParser.THROUGH, 0); }
+		public TerminalNode REFERENCE() { return getToken(aspectvParser.REFERENCE, 0); }
 		public Scalar_nature_definitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_scalar_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterScalar_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitScalar_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitScalar_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13868,12 +13280,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_scalar_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterScalar_type_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitScalar_type_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitScalar_type_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13930,12 +13339,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_secondary_unit; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSecondary_unit(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSecondary_unit(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSecondary_unit(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -13979,22 +13385,19 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode EQ() { return getToken(vhdlParser.EQ, 0); }
+		public TerminalNode EQ() { return getToken(aspectvParser.EQ, 0); }
 		public Physical_literalContext physical_literal() {
 			return getRuleContext(Physical_literalContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Secondary_unit_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_secondary_unit_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSecondary_unit_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSecondary_unit_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSecondary_unit_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14026,33 +13429,30 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Selected_signal_assignmentContext extends ParserRuleContext {
-		public TerminalNode WITH() { return getToken(vhdlParser.WITH, 0); }
+		public TerminalNode WITH() { return getToken(aspectvParser.WITH, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SELECT() { return getToken(vhdlParser.SELECT, 0); }
+		public TerminalNode SELECT() { return getToken(aspectvParser.SELECT, 0); }
 		public TargetContext target() {
 			return getRuleContext(TargetContext.class,0);
 		}
-		public TerminalNode LE() { return getToken(vhdlParser.LE, 0); }
+		public TerminalNode LE() { return getToken(aspectvParser.LE, 0); }
 		public OptsContext opts() {
 			return getRuleContext(OptsContext.class,0);
 		}
 		public Selected_waveformsContext selected_waveforms() {
 			return getRuleContext(Selected_waveformsContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Selected_signal_assignmentContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_selected_signal_assignment; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSelected_signal_assignment(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSelected_signal_assignment(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSelected_signal_assignment(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14098,9 +13498,9 @@ public class vhdlParser extends Parser {
 		public WaveformContext waveform(int i) {
 			return getRuleContext(WaveformContext.class,i);
 		}
-		public List<TerminalNode> WHEN() { return getTokens(vhdlParser.WHEN); }
+		public List<TerminalNode> WHEN() { return getTokens(aspectvParser.WHEN); }
 		public TerminalNode WHEN(int i) {
-			return getToken(vhdlParser.WHEN, i);
+			return getToken(aspectvParser.WHEN, i);
 		}
 		public List<ChoicesContext> choices() {
 			return getRuleContexts(ChoicesContext.class);
@@ -14108,21 +13508,18 @@ public class vhdlParser extends Parser {
 		public ChoicesContext choices(int i) {
 			return getRuleContext(ChoicesContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Selected_waveformsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_selected_waveforms; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSelected_waveforms(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSelected_waveforms(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSelected_waveforms(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14173,7 +13570,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Sensitivity_clauseContext extends ParserRuleContext {
-		public TerminalNode ON() { return getToken(vhdlParser.ON, 0); }
+		public TerminalNode ON() { return getToken(aspectvParser.ON, 0); }
 		public Sensitivity_listContext sensitivity_list() {
 			return getRuleContext(Sensitivity_listContext.class,0);
 		}
@@ -14182,12 +13579,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_sensitivity_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSensitivity_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSensitivity_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSensitivity_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14221,21 +13615,18 @@ public class vhdlParser extends Parser {
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Sensitivity_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_sensitivity_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSensitivity_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSensitivity_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSensitivity_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14289,12 +13680,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_sequence_of_statements; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSequence_of_statements(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSequence_of_statements(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSequence_of_statements(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14366,8 +13754,8 @@ public class vhdlParser extends Parser {
 		public Return_statementContext return_statement() {
 			return getRuleContext(Return_statementContext.class,0);
 		}
-		public TerminalNode NULL() { return getToken(vhdlParser.NULL, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode NULL() { return getToken(aspectvParser.NULL, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -14382,12 +13770,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_sequential_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSequential_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSequential_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSequential_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14537,12 +13922,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_shift_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterShift_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitShift_expression(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitShift_expression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14580,23 +13962,20 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Shift_operatorContext extends ParserRuleContext {
-		public TerminalNode SLL() { return getToken(vhdlParser.SLL, 0); }
-		public TerminalNode SRL() { return getToken(vhdlParser.SRL, 0); }
-		public TerminalNode SLA() { return getToken(vhdlParser.SLA, 0); }
-		public TerminalNode SRA() { return getToken(vhdlParser.SRA, 0); }
-		public TerminalNode ROL() { return getToken(vhdlParser.ROL, 0); }
-		public TerminalNode ROR() { return getToken(vhdlParser.ROR, 0); }
+		public TerminalNode SLL() { return getToken(aspectvParser.SLL, 0); }
+		public TerminalNode SRL() { return getToken(aspectvParser.SRL, 0); }
+		public TerminalNode SLA() { return getToken(aspectvParser.SLA, 0); }
+		public TerminalNode SRA() { return getToken(aspectvParser.SRA, 0); }
+		public TerminalNode ROL() { return getToken(aspectvParser.ROL, 0); }
+		public TerminalNode ROR() { return getToken(aspectvParser.ROR, 0); }
 		public Shift_operatorContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_shift_operator; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterShift_operator(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitShift_operator(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitShift_operator(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14634,11 +14013,11 @@ public class vhdlParser extends Parser {
 		public TargetContext target() {
 			return getRuleContext(TargetContext.class,0);
 		}
-		public TerminalNode LE() { return getToken(vhdlParser.LE, 0); }
+		public TerminalNode LE() { return getToken(aspectvParser.LE, 0); }
 		public WaveformContext waveform() {
 			return getRuleContext(WaveformContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -14650,12 +14029,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_signal_assignment_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignal_assignment_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignal_assignment_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignal_assignment_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14708,19 +14084,19 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Signal_declarationContext extends ParserRuleContext {
-		public TerminalNode SIGNAL() { return getToken(vhdlParser.SIGNAL, 0); }
+		public TerminalNode SIGNAL() { return getToken(aspectvParser.SIGNAL, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Signal_kindContext signal_kind() {
 			return getRuleContext(Signal_kindContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -14729,12 +14105,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_signal_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignal_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignal_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignal_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14791,19 +14164,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Signal_kindContext extends ParserRuleContext {
-		public TerminalNode REGISTER() { return getToken(vhdlParser.REGISTER, 0); }
-		public TerminalNode BUS() { return getToken(vhdlParser.BUS, 0); }
+		public TerminalNode REGISTER() { return getToken(aspectvParser.REGISTER, 0); }
+		public TerminalNode BUS() { return getToken(aspectvParser.BUS, 0); }
 		public Signal_kindContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_signal_kind; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignal_kind(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignal_kind(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignal_kind(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14844,23 +14214,20 @@ public class vhdlParser extends Parser {
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
-		public TerminalNode OTHERS() { return getToken(vhdlParser.OTHERS, 0); }
-		public TerminalNode ALL() { return getToken(vhdlParser.ALL, 0); }
+		public TerminalNode OTHERS() { return getToken(aspectvParser.OTHERS, 0); }
+		public TerminalNode ALL() { return getToken(aspectvParser.ALL, 0); }
 		public Signal_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_signal_list; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignal_list(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignal_list(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignal_list(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -14926,30 +14293,27 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class SignatureContext extends ParserRuleContext {
-		public TerminalNode LBRACKET() { return getToken(vhdlParser.LBRACKET, 0); }
-		public TerminalNode RBRACKET() { return getToken(vhdlParser.RBRACKET, 0); }
+		public TerminalNode LBRACKET() { return getToken(aspectvParser.LBRACKET, 0); }
+		public TerminalNode RBRACKET() { return getToken(aspectvParser.RBRACKET, 0); }
 		public List<NameContext> name() {
 			return getRuleContexts(NameContext.class);
 		}
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public TerminalNode RETURN() { return getToken(vhdlParser.RETURN, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode RETURN() { return getToken(aspectvParser.RETURN, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public SignatureContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_signature; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSignature(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSignature(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSignature(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15028,19 +14392,16 @@ public class vhdlParser extends Parser {
 		public Adding_operatorContext adding_operator(int i) {
 			return getRuleContext(Adding_operatorContext.class,i);
 		}
-		public TerminalNode PLUS() { return getToken(vhdlParser.PLUS, 0); }
-		public TerminalNode MINUS() { return getToken(vhdlParser.MINUS, 0); }
+		public TerminalNode PLUS() { return getToken(aspectvParser.PLUS, 0); }
+		public TerminalNode MINUS() { return getToken(aspectvParser.MINUS, 0); }
 		public Simple_expressionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_simple_expression; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimple_expression(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimple_expression(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimple_expression(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15110,8 +14471,8 @@ public class vhdlParser extends Parser {
 		public Simple_expressionContext simple_expression(int i) {
 			return getRuleContext(Simple_expressionContext.class,i);
 		}
-		public TerminalNode ASSIGN() { return getToken(vhdlParser.ASSIGN, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode ASSIGN() { return getToken(aspectvParser.ASSIGN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -15123,12 +14484,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simple_simultaneous_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimple_simultaneous_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimple_simultaneous_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimple_simultaneous_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15181,11 +14539,11 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Simultaneous_alternativeContext extends ParserRuleContext {
-		public TerminalNode WHEN() { return getToken(vhdlParser.WHEN, 0); }
+		public TerminalNode WHEN() { return getToken(aspectvParser.WHEN, 0); }
 		public ChoicesContext choices() {
 			return getRuleContext(ChoicesContext.class,0);
 		}
-		public TerminalNode ARROW() { return getToken(vhdlParser.ARROW, 0); }
+		public TerminalNode ARROW() { return getToken(aspectvParser.ARROW, 0); }
 		public Simultaneous_statement_partContext simultaneous_statement_part() {
 			return getRuleContext(Simultaneous_statement_partContext.class,0);
 		}
@@ -15194,12 +14552,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_alternative; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_alternative(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_alternative(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_alternative(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15231,16 +14586,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Simultaneous_case_statementContext extends ParserRuleContext {
-		public List<TerminalNode> CASE() { return getTokens(vhdlParser.CASE); }
+		public List<TerminalNode> CASE() { return getTokens(aspectvParser.CASE); }
 		public TerminalNode CASE(int i) {
-			return getToken(vhdlParser.CASE, i);
+			return getToken(aspectvParser.CASE, i);
 		}
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode USE() { return getToken(vhdlParser.USE, 0); }
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode USE() { return getToken(aspectvParser.USE, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -15258,12 +14613,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_case_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_case_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_case_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_case_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15334,16 +14686,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Simultaneous_if_statementContext extends ParserRuleContext {
-		public TerminalNode IF() { return getToken(vhdlParser.IF, 0); }
+		public TerminalNode IF() { return getToken(aspectvParser.IF, 0); }
 		public List<ConditionContext> condition() {
 			return getRuleContexts(ConditionContext.class);
 		}
 		public ConditionContext condition(int i) {
 			return getRuleContext(ConditionContext.class,i);
 		}
-		public List<TerminalNode> USE() { return getTokens(vhdlParser.USE); }
+		public List<TerminalNode> USE() { return getTokens(aspectvParser.USE); }
 		public TerminalNode USE(int i) {
-			return getToken(vhdlParser.USE, i);
+			return getToken(aspectvParser.USE, i);
 		}
 		public List<Simultaneous_statement_partContext> simultaneous_statement_part() {
 			return getRuleContexts(Simultaneous_statement_partContext.class);
@@ -15351,16 +14703,16 @@ public class vhdlParser extends Parser {
 		public Simultaneous_statement_partContext simultaneous_statement_part(int i) {
 			return getRuleContext(Simultaneous_statement_partContext.class,i);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public List<TerminalNode> ELSIF() { return getTokens(vhdlParser.ELSIF); }
+		public List<TerminalNode> ELSIF() { return getTokens(aspectvParser.ELSIF); }
 		public TerminalNode ELSIF(int i) {
-			return getToken(vhdlParser.ELSIF, i);
+			return getToken(aspectvParser.ELSIF, i);
 		}
-		public TerminalNode ELSE() { return getToken(vhdlParser.ELSE, 0); }
+		public TerminalNode ELSE() { return getToken(aspectvParser.ELSE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -15369,12 +14721,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_if_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_if_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_if_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_if_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15465,23 +14814,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Simultaneous_procedural_statementContext extends ParserRuleContext {
-		public List<TerminalNode> PROCEDURAL() { return getTokens(vhdlParser.PROCEDURAL); }
+		public List<TerminalNode> PROCEDURAL() { return getTokens(aspectvParser.PROCEDURAL); }
 		public TerminalNode PROCEDURAL(int i) {
-			return getToken(vhdlParser.PROCEDURAL, i);
+			return getToken(aspectvParser.PROCEDURAL, i);
 		}
 		public Procedural_declarative_partContext procedural_declarative_part() {
 			return getRuleContext(Procedural_declarative_partContext.class,0);
 		}
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Procedural_statement_partContext procedural_statement_part() {
 			return getRuleContext(Procedural_statement_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
@@ -15490,12 +14839,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_procedural_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_procedural_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_procedural_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_procedural_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15576,8 +14922,8 @@ public class vhdlParser extends Parser {
 		public Simultaneous_procedural_statementContext simultaneous_procedural_statement() {
 			return getRuleContext(Simultaneous_procedural_statementContext.class,0);
 		}
-		public TerminalNode NULL() { return getToken(vhdlParser.NULL, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode NULL() { return getToken(aspectvParser.NULL, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -15586,12 +14932,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15675,12 +15018,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_simultaneous_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSimultaneous_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSimultaneous_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSimultaneous_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15719,26 +15059,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Source_aspectContext extends ParserRuleContext {
-		public TerminalNode SPECTRUM() { return getToken(vhdlParser.SPECTRUM, 0); }
+		public TerminalNode SPECTRUM() { return getToken(aspectvParser.SPECTRUM, 0); }
 		public List<Simple_expressionContext> simple_expression() {
 			return getRuleContexts(Simple_expressionContext.class);
 		}
 		public Simple_expressionContext simple_expression(int i) {
 			return getRuleContext(Simple_expressionContext.class,i);
 		}
-		public TerminalNode COMMA() { return getToken(vhdlParser.COMMA, 0); }
-		public TerminalNode NOISE() { return getToken(vhdlParser.NOISE, 0); }
+		public TerminalNode COMMA() { return getToken(aspectvParser.COMMA, 0); }
+		public TerminalNode NOISE() { return getToken(aspectvParser.NOISE, 0); }
 		public Source_aspectContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_source_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSource_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSource_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSource_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15787,29 +15124,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Source_quantity_declarationContext extends ParserRuleContext {
-		public TerminalNode QUANTITY() { return getToken(vhdlParser.QUANTITY, 0); }
+		public TerminalNode QUANTITY() { return getToken(aspectvParser.QUANTITY, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
 		public Source_aspectContext source_aspect() {
 			return getRuleContext(Source_aspectContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Source_quantity_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_source_quantity_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSource_quantity_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSource_quantity_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSource_quantity_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15845,26 +15179,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Step_limit_specificationContext extends ParserRuleContext {
-		public TerminalNode LIMIT() { return getToken(vhdlParser.LIMIT, 0); }
+		public TerminalNode LIMIT() { return getToken(aspectvParser.LIMIT, 0); }
 		public Quantity_specificationContext quantity_specification() {
 			return getRuleContext(Quantity_specificationContext.class,0);
 		}
-		public TerminalNode WITH() { return getToken(vhdlParser.WITH, 0); }
+		public TerminalNode WITH() { return getToken(aspectvParser.WITH, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Step_limit_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_step_limit_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterStep_limit_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitStep_limit_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitStep_limit_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15898,26 +15229,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Subnature_declarationContext extends ParserRuleContext {
-		public TerminalNode SUBNATURE() { return getToken(vhdlParser.SUBNATURE, 0); }
+		public TerminalNode SUBNATURE() { return getToken(aspectvParser.SUBNATURE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Subnature_indicationContext subnature_indication() {
 			return getRuleContext(Subnature_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Subnature_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subnature_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubnature_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubnature_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubnature_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -15957,26 +15285,23 @@ public class vhdlParser extends Parser {
 		public Index_constraintContext index_constraint() {
 			return getRuleContext(Index_constraintContext.class,0);
 		}
-		public TerminalNode TOLERANCE() { return getToken(vhdlParser.TOLERANCE, 0); }
+		public TerminalNode TOLERANCE() { return getToken(aspectvParser.TOLERANCE, 0); }
 		public List<ExpressionContext> expression() {
 			return getRuleContexts(ExpressionContext.class);
 		}
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode ACROSS() { return getToken(vhdlParser.ACROSS, 0); }
-		public TerminalNode THROUGH() { return getToken(vhdlParser.THROUGH, 0); }
+		public TerminalNode ACROSS() { return getToken(aspectvParser.ACROSS, 0); }
+		public TerminalNode THROUGH() { return getToken(aspectvParser.THROUGH, 0); }
 		public Subnature_indicationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subnature_indication; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubnature_indication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubnature_indication(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubnature_indication(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16034,16 +15359,16 @@ public class vhdlParser extends Parser {
 		public Subprogram_specificationContext subprogram_specification() {
 			return getRuleContext(Subprogram_specificationContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Subprogram_declarative_partContext subprogram_declarative_part() {
 			return getRuleContext(Subprogram_declarative_partContext.class,0);
 		}
-		public TerminalNode BEGIN() { return getToken(vhdlParser.BEGIN, 0); }
+		public TerminalNode BEGIN() { return getToken(aspectvParser.BEGIN, 0); }
 		public Subprogram_statement_partContext subprogram_statement_part() {
 			return getRuleContext(Subprogram_statement_partContext.class,0);
 		}
-		public TerminalNode END() { return getToken(vhdlParser.END, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode END() { return getToken(aspectvParser.END, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Subprogram_kindContext subprogram_kind() {
 			return getRuleContext(Subprogram_kindContext.class,0);
 		}
@@ -16055,12 +15380,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_body; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_body(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_body(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_body(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16122,18 +15444,15 @@ public class vhdlParser extends Parser {
 		public Subprogram_specificationContext subprogram_specification() {
 			return getRuleContext(Subprogram_specificationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Subprogram_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16205,12 +15524,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_declarative_item; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_declarative_item(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_declarative_item(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_declarative_item(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16337,12 +15653,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_declarative_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_declarative_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_declarative_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_declarative_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16381,19 +15694,16 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Subprogram_kindContext extends ParserRuleContext {
-		public TerminalNode PROCEDURE() { return getToken(vhdlParser.PROCEDURE, 0); }
-		public TerminalNode FUNCTION() { return getToken(vhdlParser.FUNCTION, 0); }
+		public TerminalNode PROCEDURE() { return getToken(aspectvParser.PROCEDURE, 0); }
+		public TerminalNode FUNCTION() { return getToken(aspectvParser.FUNCTION, 0); }
 		public Subprogram_kindContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_kind; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_kind(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_kind(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_kind(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16439,12 +15749,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16487,26 +15794,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Procedure_specificationContext extends ParserRuleContext {
-		public TerminalNode PROCEDURE() { return getToken(vhdlParser.PROCEDURE, 0); }
+		public TerminalNode PROCEDURE() { return getToken(aspectvParser.PROCEDURE, 0); }
 		public DesignatorContext designator() {
 			return getRuleContext(DesignatorContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Formal_parameter_listContext formal_parameter_list() {
 			return getRuleContext(Formal_parameter_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
 		public Procedure_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_procedure_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterProcedure_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitProcedure_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitProcedure_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16549,32 +15853,29 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Function_specificationContext extends ParserRuleContext {
-		public TerminalNode FUNCTION() { return getToken(vhdlParser.FUNCTION, 0); }
+		public TerminalNode FUNCTION() { return getToken(aspectvParser.FUNCTION, 0); }
 		public DesignatorContext designator() {
 			return getRuleContext(DesignatorContext.class,0);
 		}
-		public TerminalNode RETURN() { return getToken(vhdlParser.RETURN, 0); }
+		public TerminalNode RETURN() { return getToken(aspectvParser.RETURN, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public Formal_parameter_listContext formal_parameter_list() {
 			return getRuleContext(Formal_parameter_listContext.class,0);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode PURE() { return getToken(vhdlParser.PURE, 0); }
-		public TerminalNode IMPURE() { return getToken(vhdlParser.IMPURE, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode PURE() { return getToken(aspectvParser.PURE, 0); }
+		public TerminalNode IMPURE() { return getToken(aspectvParser.IMPURE, 0); }
 		public Function_specificationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function_specification; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterFunction_specification(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitFunction_specification(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitFunction_specification(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16650,12 +15951,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subprogram_statement_part; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubprogram_statement_part(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubprogram_statement_part(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubprogram_statement_part(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16694,26 +15992,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Subtype_declarationContext extends ParserRuleContext {
-		public TerminalNode SUBTYPE() { return getToken(vhdlParser.SUBTYPE, 0); }
+		public TerminalNode SUBTYPE() { return getToken(aspectvParser.SUBTYPE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Subtype_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_subtype_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubtype_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubtype_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubtype_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16764,12 +16059,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_subtype_indication; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSubtype_indication(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSubtype_indication(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSubtype_indication(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16828,20 +16120,17 @@ public class vhdlParser extends Parser {
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode CHARACTER_LITERAL() { return getToken(vhdlParser.CHARACTER_LITERAL, 0); }
-		public TerminalNode STRING_LITERAL() { return getToken(vhdlParser.STRING_LITERAL, 0); }
-		public TerminalNode ALL() { return getToken(vhdlParser.ALL, 0); }
+		public TerminalNode CHARACTER_LITERAL() { return getToken(aspectvParser.CHARACTER_LITERAL, 0); }
+		public TerminalNode STRING_LITERAL() { return getToken(aspectvParser.STRING_LITERAL, 0); }
+		public TerminalNode ALL() { return getToken(aspectvParser.ALL, 0); }
 		public SuffixContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_suffix; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterSuffix(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitSuffix(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitSuffix(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16908,12 +16197,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_target; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTarget(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTarget(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTarget(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -16972,12 +16258,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_term; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTerm(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTerm(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTerm(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17028,18 +16311,15 @@ public class vhdlParser extends Parser {
 		public NameContext name(int i) {
 			return getRuleContext(NameContext.class,i);
 		}
-		public TerminalNode TO() { return getToken(vhdlParser.TO, 0); }
+		public TerminalNode TO() { return getToken(aspectvParser.TO, 0); }
 		public Terminal_aspectContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_terminal_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTerminal_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTerminal_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTerminal_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17078,26 +16358,23 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Terminal_declarationContext extends ParserRuleContext {
-		public TerminalNode TERMINAL() { return getToken(vhdlParser.TERMINAL, 0); }
+		public TerminalNode TERMINAL() { return getToken(aspectvParser.TERMINAL, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subnature_indicationContext subnature_indication() {
 			return getRuleContext(Subnature_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Terminal_declarationContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_terminal_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTerminal_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTerminal_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTerminal_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17134,11 +16411,11 @@ public class vhdlParser extends Parser {
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode THROUGH() { return getToken(vhdlParser.THROUGH, 0); }
+		public TerminalNode THROUGH() { return getToken(aspectvParser.THROUGH, 0); }
 		public Tolerance_aspectContext tolerance_aspect() {
 			return getRuleContext(Tolerance_aspectContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -17147,12 +16424,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_through_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterThrough_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitThrough_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitThrough_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17203,7 +16477,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Timeout_clauseContext extends ParserRuleContext {
-		public TerminalNode FOR() { return getToken(vhdlParser.FOR, 0); }
+		public TerminalNode FOR() { return getToken(aspectvParser.FOR, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -17212,12 +16486,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_timeout_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTimeout_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTimeout_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTimeout_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17245,7 +16516,7 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Tolerance_aspectContext extends ParserRuleContext {
-		public TerminalNode TOLERANCE() { return getToken(vhdlParser.TOLERANCE, 0); }
+		public TerminalNode TOLERANCE() { return getToken(aspectvParser.TOLERANCE, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -17254,12 +16525,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_tolerance_aspect; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterTolerance_aspect(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitTolerance_aspect(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitTolerance_aspect(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17287,12 +16555,12 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Type_declarationContext extends ParserRuleContext {
-		public TerminalNode TYPE() { return getToken(vhdlParser.TYPE, 0); }
+		public TerminalNode TYPE() { return getToken(aspectvParser.TYPE, 0); }
 		public IdentifierContext identifier() {
 			return getRuleContext(IdentifierContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode IS() { return getToken(vhdlParser.IS, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode IS() { return getToken(aspectvParser.IS, 0); }
 		public Type_definitionContext type_definition() {
 			return getRuleContext(Type_definitionContext.class,0);
 		}
@@ -17301,12 +16569,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterType_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitType_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitType_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17366,12 +16631,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_type_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterType_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitType_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitType_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17428,34 +16690,31 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Unconstrained_array_definitionContext extends ParserRuleContext {
-		public TerminalNode ARRAY() { return getToken(vhdlParser.ARRAY, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode ARRAY() { return getToken(aspectvParser.ARRAY, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Index_subtype_definitionContext> index_subtype_definition() {
 			return getRuleContexts(Index_subtype_definitionContext.class);
 		}
 		public Index_subtype_definitionContext index_subtype_definition(int i) {
 			return getRuleContext(Index_subtype_definitionContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Unconstrained_array_definitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unconstrained_array_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterUnconstrained_array_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitUnconstrained_array_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitUnconstrained_array_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17508,34 +16767,31 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Unconstrained_nature_definitionContext extends ParserRuleContext {
-		public TerminalNode ARRAY() { return getToken(vhdlParser.ARRAY, 0); }
-		public TerminalNode LPAREN() { return getToken(vhdlParser.LPAREN, 0); }
+		public TerminalNode ARRAY() { return getToken(aspectvParser.ARRAY, 0); }
+		public TerminalNode LPAREN() { return getToken(aspectvParser.LPAREN, 0); }
 		public List<Index_subtype_definitionContext> index_subtype_definition() {
 			return getRuleContexts(Index_subtype_definitionContext.class);
 		}
 		public Index_subtype_definitionContext index_subtype_definition(int i) {
 			return getRuleContext(Index_subtype_definitionContext.class,i);
 		}
-		public TerminalNode RPAREN() { return getToken(vhdlParser.RPAREN, 0); }
-		public TerminalNode OF() { return getToken(vhdlParser.OF, 0); }
+		public TerminalNode RPAREN() { return getToken(aspectvParser.RPAREN, 0); }
+		public TerminalNode OF() { return getToken(aspectvParser.OF, 0); }
 		public Subnature_indicationContext subnature_indication() {
 			return getRuleContext(Subnature_indicationContext.class,0);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Unconstrained_nature_definitionContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unconstrained_nature_definition; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterUnconstrained_nature_definition(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitUnconstrained_nature_definition(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitUnconstrained_nature_definition(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17588,29 +16844,26 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Use_clauseContext extends ParserRuleContext {
-		public TerminalNode USE() { return getToken(vhdlParser.USE, 0); }
+		public TerminalNode USE() { return getToken(aspectvParser.USE, 0); }
 		public List<Selected_nameContext> selected_name() {
 			return getRuleContexts(Selected_nameContext.class);
 		}
 		public Selected_nameContext selected_name(int i) {
 			return getRuleContext(Selected_nameContext.class,i);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
 		public Use_clauseContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_use_clause; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterUse_clause(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitUse_clause(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitUse_clause(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17660,11 +16913,11 @@ public class vhdlParser extends Parser {
 		public TargetContext target() {
 			return getRuleContext(TargetContext.class,0);
 		}
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -17673,12 +16926,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_variable_assignment_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterVariable_assignment_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitVariable_assignment_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitVariable_assignment_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17720,17 +16970,17 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Variable_declarationContext extends ParserRuleContext {
-		public TerminalNode VARIABLE() { return getToken(vhdlParser.VARIABLE, 0); }
+		public TerminalNode VARIABLE() { return getToken(aspectvParser.VARIABLE, 0); }
 		public Identifier_listContext identifier_list() {
 			return getRuleContext(Identifier_listContext.class,0);
 		}
-		public TerminalNode COLON() { return getToken(vhdlParser.COLON, 0); }
+		public TerminalNode COLON() { return getToken(aspectvParser.COLON, 0); }
 		public Subtype_indicationContext subtype_indication() {
 			return getRuleContext(Subtype_indicationContext.class,0);
 		}
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
-		public TerminalNode SHARED() { return getToken(vhdlParser.SHARED, 0); }
-		public TerminalNode VARASGN() { return getToken(vhdlParser.VARASGN, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
+		public TerminalNode SHARED() { return getToken(aspectvParser.SHARED, 0); }
+		public TerminalNode VARASGN() { return getToken(aspectvParser.VARASGN, 0); }
 		public ExpressionContext expression() {
 			return getRuleContext(ExpressionContext.class,0);
 		}
@@ -17739,12 +16989,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_variable_declaration; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterVariable_declaration(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitVariable_declaration(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitVariable_declaration(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17801,8 +17048,8 @@ public class vhdlParser extends Parser {
 	}
 
 	public static class Wait_statementContext extends ParserRuleContext {
-		public TerminalNode WAIT() { return getToken(vhdlParser.WAIT, 0); }
-		public TerminalNode SEMI() { return getToken(vhdlParser.SEMI, 0); }
+		public TerminalNode WAIT() { return getToken(aspectvParser.WAIT, 0); }
+		public TerminalNode SEMI() { return getToken(aspectvParser.SEMI, 0); }
 		public Label_colonContext label_colon() {
 			return getRuleContext(Label_colonContext.class,0);
 		}
@@ -17820,12 +17067,9 @@ public class vhdlParser extends Parser {
 		}
 		@Override public int getRuleIndex() { return RULE_wait_statement; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterWait_statement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitWait_statement(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitWait_statement(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17900,22 +17144,19 @@ public class vhdlParser extends Parser {
 		public Waveform_elementContext waveform_element(int i) {
 			return getRuleContext(Waveform_elementContext.class,i);
 		}
-		public List<TerminalNode> COMMA() { return getTokens(vhdlParser.COMMA); }
+		public List<TerminalNode> COMMA() { return getTokens(aspectvParser.COMMA); }
 		public TerminalNode COMMA(int i) {
-			return getToken(vhdlParser.COMMA, i);
+			return getToken(aspectvParser.COMMA, i);
 		}
-		public TerminalNode UNAFFECTED() { return getToken(vhdlParser.UNAFFECTED, 0); }
+		public TerminalNode UNAFFECTED() { return getToken(aspectvParser.UNAFFECTED, 0); }
 		public WaveformContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_waveform; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterWaveform(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitWaveform(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitWaveform(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -17993,18 +17234,15 @@ public class vhdlParser extends Parser {
 		public ExpressionContext expression(int i) {
 			return getRuleContext(ExpressionContext.class,i);
 		}
-		public TerminalNode AFTER() { return getToken(vhdlParser.AFTER, 0); }
+		public TerminalNode AFTER() { return getToken(aspectvParser.AFTER, 0); }
 		public Waveform_elementContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_waveform_element; }
 		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).enterWaveform_element(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof vhdlListener ) ((vhdlListener)listener).exitWaveform_element(this);
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof aspectvVisitor ) return ((aspectvVisitor<? extends T>)visitor).visitWaveform_element(this);
+			else return visitor.visitChildren(this);
 		}
 	}
 
