@@ -63,3 +63,4 @@ log/
 # Code Recommenders
 .recommenders/
 /build/
+/build-test/
