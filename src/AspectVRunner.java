@@ -1,6 +1,9 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
+import aspectv.BasicVisitor;
+import ast.AbstractNode;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -18,8 +21,18 @@ public class AspectVRunner {
 			
 			ParseTree tree = parser.design_file(); // design_file is the first non-terminal
 			
-			System.out.println("Generated Tree:\n");
+			System.out.println("Parse Tree:");
 			System.out.println(tree.toStringTree(parser));
+			
+			System.out.println("\nAbstract Syntax Tree:");
+			BuildASTVisitor visitor = new BuildASTVisitor();
+			AbstractNode root = visitor.visit(tree);
+			root.printTree(0);
+			
+			System.out.println("\nAST Test Visitor: ");
+			BasicVisitor bv = new BasicVisitor();
+			bv.defaultVisit(root);
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
