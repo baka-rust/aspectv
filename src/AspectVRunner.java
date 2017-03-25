@@ -2,6 +2,7 @@ import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 
 import aspectv.BasicVisitor;
+import aspectv.GenerativeVisitor;
 import ast.AbstractNode;
 
 import java.io.File;
@@ -32,6 +33,10 @@ public class AspectVRunner {
 			System.out.println("\nAST Test Visitor: ");
 			BasicVisitor bv = new BasicVisitor();
 			bv.defaultVisit(root);
+			
+			System.out.println("\nGeneration: \n");
+			GenerativeVisitor gv = new GenerativeVisitor();
+			gv.defaultVisit(root);
 			
 		} catch (IOException e) {
 			e.printStackTrace();

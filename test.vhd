@@ -1,25 +1,22 @@
-library ieee;
-use ieee.std_logic_1164.all;
+ARCHITECTURE behavioral OF regfile IS
+   
+BEGIN
+   
+   ra <= ir(26 DOWNTO 22) ;
+   rb <= ir(21 DOWNTO 17) ;
+   rc <= IR(16 DOWNTO 12) ;
 
-entity OR_ent is
-port(	x: in std_logic;
-		y: in std_logic;
-		F: out std_logic
-);
-end OR_ent;
-
-architecture OR_arch of OR_ent is
-begin
-    process(x, y)
-    begin
-        -- compare to truth table
-        if ((x='0') and (y='0')) then
-        	F <= '0';
-        elsif ((z='1')) then
-        	F <= '1';
-        else
-        	F <= '1';
-		end if;
-    end process;
-
-end OR_arch;
+   amux:PROCESS(ra,rb,rc,gra,grb,grc)
+   BEGIN
+      IF (gra = '1') THEN
+	 mux_out <= ra ;
+      ELSIF (grb = '1') THEN
+         mux_out <= rb ;
+      ELSIF (grc = '1') THEN
+         mux_out <= rc ;
+      ELSE
+         mux_out <= "00000" ;
+      END IF ;
+   END PROCESS amux ; 
+   
+END behavioral ;
